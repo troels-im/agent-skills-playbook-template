@@ -1,0 +1,52 @@
+trace_id: linear-ENG-123
+tracker:
+  provider: linear
+  id: ENG-123
+  url: https://linear.app/example/issue/ENG-123/add-trace-fixtures
+  project: ENG
+  title: Add trace fixtures
+artifacts:
+  prd: prd.md
+  requirements:
+    - requirements/REQ-001-linear-example.md
+  acceptance:
+    - acceptance/AC-001-linear-tracker.md
+  tasks:
+    - tasks/TASK-001-add-linear-example.md
+  adrs: []
+  reviews: []
+requirements:
+  - id: REQ-001
+    file: requirements/REQ-001-linear-example.md
+    tasks:
+      - TASK-001
+    acceptance:
+      - AC-001
+    code:
+      - work-trace/examples/linear-ENG-123/trace.yaml
+    tests:
+      - TEST-001
+acceptance:
+  - id: AC-001
+    file: acceptance/AC-001-linear-tracker.md
+    requirements:
+      - REQ-001
+tasks:
+  - id: TASK-001
+    file: tasks/TASK-001-add-linear-example.md
+    status: Done
+    satisfies:
+      requirements:
+        - REQ-001
+      acceptance:
+        - AC-001
+commits: []
+code_refs:
+  - path: work-trace/examples/linear-ENG-123/trace.yaml
+    requirements:
+      - REQ-001
+    tasks:
+      - TASK-001
+test_refs:
+  - id: TEST-001
+    command: just test

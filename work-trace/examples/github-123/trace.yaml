@@ -1,0 +1,61 @@
+trace_id: github-123
+tracker:
+  provider: github
+  id: "123"
+  url: https://github.com/example/example-repo/issues/123
+  project: example/example-repo
+  title: Add trace policy checks
+artifacts:
+  prd: prd.md
+  requirements:
+    - requirements/REQ-001-trace-policy.md
+  acceptance:
+    - acceptance/AC-001-task-completion-trailers.md
+  tasks:
+    - tasks/TASK-001-add-commit-trailer-check.md
+  adrs:
+    - adrs/ADR-001-commit-trailers.md
+  reviews:
+    - reviews/REVIEW-001-review-turn.md
+requirements:
+  - id: REQ-001
+    file: requirements/REQ-001-trace-policy.md
+    tasks:
+      - TASK-001
+    acceptance:
+      - AC-001
+    code:
+      - policies/commit-trailers/check.sh
+    tests:
+      - TEST-001
+acceptance:
+  - id: AC-001
+    file: acceptance/AC-001-task-completion-trailers.md
+    requirements:
+      - REQ-001
+tasks:
+  - id: TASK-001
+    file: tasks/TASK-001-add-commit-trailer-check.md
+    status: Validated
+    satisfies:
+      requirements:
+        - REQ-001
+      acceptance:
+        - AC-001
+commits:
+  - hash: example
+    trailers:
+      Trace-Ticket: github:example/example-repo#123
+      Trace-Task: TASK-001
+      Trace-Req: REQ-001
+      Trace-AC: AC-001
+      Trace-Test: just test
+code_refs:
+  - path: policies/commit-trailers/check.sh
+    requirements:
+      - REQ-001
+    tasks:
+      - TASK-001
+test_refs:
+  - id: TEST-001
+    command: just test

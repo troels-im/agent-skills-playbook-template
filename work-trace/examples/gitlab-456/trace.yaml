@@ -1,0 +1,52 @@
+trace_id: gitlab-456
+tracker:
+  provider: gitlab
+  id: "456"
+  url: https://gitlab.com/example/example-repo/-/issues/456
+  project: example/example-repo
+  title: Document trace model
+artifacts:
+  prd: prd.md
+  requirements:
+    - requirements/REQ-001-trace-docs.md
+  acceptance:
+    - acceptance/AC-001-provider-model.md
+  tasks:
+    - tasks/TASK-001-write-trace-docs.md
+  adrs: []
+  reviews: []
+requirements:
+  - id: REQ-001
+    file: requirements/REQ-001-trace-docs.md
+    tasks:
+      - TASK-001
+    acceptance:
+      - AC-001
+    code:
+      - docs/traceability-model.md
+    tests:
+      - TEST-001
+acceptance:
+  - id: AC-001
+    file: acceptance/AC-001-provider-model.md
+    requirements:
+      - REQ-001
+tasks:
+  - id: TASK-001
+    file: tasks/TASK-001-write-trace-docs.md
+    status: Done
+    satisfies:
+      requirements:
+        - REQ-001
+      acceptance:
+        - AC-001
+commits: []
+code_refs:
+  - path: docs/traceability-model.md
+    requirements:
+      - REQ-001
+    tasks:
+      - TASK-001
+test_refs:
+  - id: TEST-001
+    command: just test

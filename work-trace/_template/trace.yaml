@@ -1,0 +1,45 @@
+trace_id: local-short-slug
+tracker:
+  provider: local
+  id: short-slug
+  url: ""
+  project: ""
+  title: Short work title
+artifacts:
+  prd: prd.md
+  requirements:
+    - requirements/REQ-001-short-title.md
+  acceptance:
+    - acceptance/AC-001-short-title.md
+  tasks:
+    - tasks/TASK-001-short-title.md
+  adrs: []
+  reviews: []
+requirements:
+  - id: REQ-001
+    file: requirements/REQ-001-short-title.md
+    tasks:
+      - TASK-001
+    acceptance:
+      - AC-001
+    code: []
+    tests: []
+acceptance:
+  - id: AC-001
+    file: acceptance/AC-001-short-title.md
+    requirements:
+      - REQ-001
+tasks:
+  - id: TASK-001
+    file: tasks/TASK-001-short-title.md
+    status: Drafted
+    satisfies:
+      requirements:
+        - REQ-001
+      acceptance:
+        - AC-001
+commits: []
+code_refs: []
+test_refs:
+  - id: TEST-001
+    command: just test
