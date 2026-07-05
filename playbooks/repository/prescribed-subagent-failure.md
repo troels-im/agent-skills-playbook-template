@@ -37,10 +37,11 @@ work-trace/{trace-id}/reviews/REVIEW-QUEUE-YYYYMMDDTHHMMSSZ-subagent-failure.md
 If no trace exists, write it under:
 
 ```text
-/tmp/wonop/review-queue/REVIEW-QUEUE-YYYYMMDDTHHMMSSZ-subagent-failure.md
+work-queue/review-queue/REVIEW-QUEUE-YYYYMMDDTHHMMSSZ-subagent-failure.md
 ```
 
-Move temporary review-queue items into the trace once the work becomes durable.
+Move queued review items into the trace once the durable trace exists. Do not
+write review-queue items outside the repository.
 
 ## Retrospective Contents
 

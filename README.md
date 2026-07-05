@@ -23,6 +23,7 @@ can discover the right workflow without loading a pile of irrelevant context.
 - Playbooks for planning, reviews, retrospectives, traceable ticket work,
   context save/restore, safety, documentation, and quality.
 - `work-trace/{issue-id}/` conventions for checked-in planning artifacts.
+- `work-queue/` for repo-local pre-trace flow runs and review queue items.
 - `tickets/` as the repository-local tracker when GitHub, GitLab, or Linear is
   not configured.
 - Reviewed assumption files before user stories, PRDs, acceptance criteria, or

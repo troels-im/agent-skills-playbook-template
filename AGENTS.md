@@ -27,6 +27,9 @@ workflow detail.
   `github`, `gitlab`, `linear`, or `local`. If the user has not specified
   GitHub, GitLab, or Linear, default to `local` and create tickets in
   `tickets/`. Do not skip ticket creation; local tickets are still tickets.
+- Keep agent-created workflow artifacts inside the repository. If a flow run,
+  review queue item, or other pre-trace artifact is needed before a durable
+  `work-trace/{trace-id}/` exists, use `work-queue/`, not `/tmp`.
 - Do not assume a programming language, build system, package manager, test
   framework, cloud, database, or deployment platform.
 - For production code, prefer domain/subdomain/vertical organization where
@@ -81,6 +84,8 @@ radius is unclear.
 - `playbooks/`: reusable workflows with progressive loading.
 - `policies/`: repository checks run by `just turn-test` and `just pr-test`.
 - `work-trace/`: issue-backed planning artifacts for non-trivial work.
+- `work-queue/`: repo-local holding area for pre-trace flow runs and review
+  queue items.
 - `docs/`: human-facing explanatory documentation.
 
 ## Build And Test Workflow

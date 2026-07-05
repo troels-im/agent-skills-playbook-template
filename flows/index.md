@@ -64,10 +64,11 @@ work-trace/{trace-id}/runs/{run-id}.md
 If no trace exists yet, start in:
 
 ```text
-/tmp/wonop/flows/{run-id}.md
+work-queue/flows/{run-id}.md
 ```
 
-Move the run checklist into the trace once the work becomes durable.
+Move the run checklist into the trace once the durable trace exists. Do not
+create flow run checklists outside the repository.
 
 For local trace or ticket ids that could otherwise collide, use the same UTC
 timestamp plus slug pattern, for example `local-20260705T143012Z-docs-flow`.

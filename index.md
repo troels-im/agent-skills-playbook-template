@@ -24,6 +24,8 @@ This is the first AI-facing map for the repository.
 - `policies/index.md`: checks run by `just turn-test` and `just pr-test`.
 - `work-trace/README.md`: checked-in planning artifacts for ticket-backed
   work.
+- `work-queue/README.md`: repo-local holding area for pre-trace flow runs and
+  review queue items.
 
 ## Core Contract
 
