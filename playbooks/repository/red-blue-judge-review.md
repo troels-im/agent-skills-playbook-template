@@ -38,7 +38,8 @@ If subagents are unavailable, stop the loop and follow
 2. Spawn red team. Ask it to find missing pieces, contradictions, risks,
    unimplemented expectations, user-story gaps, stories with multiple actions,
    stories larger than 5 points, missing happy paths, missing unhappy paths,
-   ambiguous screen details, and actions exposed without user stories.
+   missing end-to-end user or system flows, ambiguous screen details, and
+   actions exposed without user stories.
 3. Spawn blue team. Give it the packet and red findings. Ask it to defend each
    finding with evidence or concede clearly.
 4. Spawn judge. Give it the packet, red findings, and blue responses. Ask it
@@ -62,6 +63,7 @@ For each valid finding:
 - title
 - evidence
 - affected user story, requirement, acceptance criterion, or file
+- affected user flow, when relevant
 - required next action
 - whether to continue or send work back to implementation
 
@@ -74,5 +76,7 @@ Avoid:
 - treating judge output as final without parent-agent verification
 - burying P1/P2 findings under polish
 - accepting broad user stories as reviewable units
+- accepting story sets that omit checkout, automation, background-worker, or
+  other end-to-end flows
 - accepting story sets that do not fully define what is possible and impossible
   in the product area

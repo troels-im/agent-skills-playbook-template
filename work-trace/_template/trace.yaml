@@ -24,6 +24,8 @@ artifacts:
     - acceptance/AC-001-short-title.md
   assumptions:
     - assumptions/ASM-20260705T000000Z-example.md
+  user_flows:
+    - user-flows/UF-001-short-title.md
   tasks:
     - tasks/TASK-001-short-title.md
   adrs: []
@@ -44,6 +46,13 @@ requirements:
 acceptance:
   - id: AC-001
     file: acceptance/AC-001-short-title.md
+    requirements:
+      - REQ-001
+user_flows:
+  - id: UF-001
+    file: user-flows/UF-001-short-title.md
+    stories:
+      - US-001
     requirements:
       - REQ-001
 tasks:

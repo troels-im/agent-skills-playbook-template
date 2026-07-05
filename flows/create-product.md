@@ -29,24 +29,29 @@ Pre-execute:
    assumptions file.
 8. [ ] Run `playbooks/repository/five-counsel-consultation.md` using the
    reviewed assumptions to identify candidate user stories.
-9. [ ] Build a thorough story inventory with
+9. [ ] Map end-to-end user and system flows with
+   `playbooks/planning/user-flow-mapping.md`, including checkout-like journeys
+   and automation or background-worker flows when relevant.
+10. [ ] Build a thorough story inventory with
    `playbooks/planning/user-story-slicing.md`; every story must cover one
-   action, be no larger than 5 points, and include happy-path and unhappy-path
-   details.
-10. [ ] Persist all product user transformations and sliced user stories in the
-   trace.
-11. [ ] Review the user stories with
+   action, be no larger than 5 points, link to relevant flow steps, and include
+   happy-path and unhappy-path details.
+11. [ ] Persist all product user transformations, user flows, and sliced user
+   stories in the trace.
+12. [ ] Review the user stories and user flows with
    `playbooks/repository/red-blue-judge-review.md`; fix missing stories,
-   missing unhappy paths, broad stories, and unclear screen details before PRD
-   creation.
-12. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
-   user story must become or map to acceptance criteria, and actions without
-   stories are out of scope.
-13. [ ] Define the domain, subdomain, verticals, and code organization strategy
+   missing flows, missing unhappy paths, broad stories, and unclear screen
+   details before PRD creation.
+13. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
+   user story must become or map to acceptance criteria and requirement files,
+   and actions without stories are out of scope.
+14. [ ] If the work has UI, calibrate taste with
+   `playbooks/design/taste-calibration.md`.
+15. [ ] Define the domain, subdomain, verticals, and code organization strategy
    with `playbooks/engineering/code-organization.md`.
-14. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
+16. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
    durable explanation.
-15. [ ] Create tickets with `playbooks/planning/split-into-tickets.md`. Do not
+17. [ ] Create tickets with `playbooks/planning/split-into-tickets.md`. Do not
    start implementation until each accepted slice has an external or local
    ticket.
 
@@ -70,12 +75,15 @@ QA:
 1. [ ] Review whether every persisted user story was delivered using trace,
    code review evidence, and `playbooks/repository/red-blue-judge-review.md`
    with subagents.
-2. [ ] For each user story, check whether it was implemented as described.
-3. [ ] Check that no unstoried action is exposed.
-4. [ ] If any story is missing, incorrectly implemented, or contradicted by an
+2. [ ] Review whether every persisted user or system flow was delivered.
+3. [ ] For each user story, check whether it was implemented as described.
+4. [ ] If the work has UI, review taste with
+   `playbooks/design/ui-taste-review.md`.
+5. [ ] Check that no unstoried action is exposed.
+6. [ ] If any story or flow is missing, incorrectly implemented, or contradicted by an
    unstoried exposed action, send the work back to implementation with a
    concrete description of what must be done.
-5. [ ] Repeat implementation and QA until all user stories pass or the user
+7. [ ] Repeat implementation and QA until all user stories pass or the user
    explicitly defers them.
 
 Finish:

@@ -4,6 +4,16 @@
 
 ...
 
+## Source
+
+- PRD: `../prd.md`
+- User Flow: `../user-flows/UF-001-short-title.md`
+- User Story: `US-001`
+
+## Rationale
+
+...
+
 ## Acceptance Criteria
 
 - `AC-001`

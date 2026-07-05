@@ -15,6 +15,8 @@ Use these playbooks to turn vague work into executable, testable plans.
 - `split-into-tickets.md`: Split a PRD, spec, or plan into GitHub, GitLab,
   Linear, or local repository tickets.
 - `spec.md`: Turn vague intent into an executable, testable spec.
+- `user-flow-mapping.md`: Capture end-to-end user and system flows that connect
+  one-action stories into complete journeys.
 - `user-story-slicing.md`: Keep user stories to one user action and at most
   five Fibonacci story points.
 - `verify-assumptions.md`: Write assumptions to a trace file and review them

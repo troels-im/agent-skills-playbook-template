@@ -35,6 +35,15 @@ Start at `engineering/index.md`.
 - `engineering/test-drive-change.md`: Use a red-green-refactor loop for
   trace-linked changes.
 
+## Design
+
+Start at `design/index.md`.
+
+- `design/taste-calibration.md`: Establish the design read, aesthetic
+  direction, design-system choice, and anti-default guardrails before UI work.
+- `design/ui-taste-review.md`: Review UI for taste, clarity, states,
+  accessibility, motion, content quality, and common AI-design defaults.
+
 ## Knowledge
 
 Start at `knowledge/index.md`.
@@ -53,6 +62,8 @@ Start at `planning/index.md`.
 - `planning/split-into-tickets.md`: Split a PRD, spec, or plan into GitHub,
   GitLab, Linear, or local repository tickets.
 - `planning/spec.md`: Turn vague intent into an executable, testable spec.
+- `planning/user-flow-mapping.md`: Capture end-to-end user and system flows
+  that connect one-action stories into complete journeys.
 - `planning/user-story-slicing.md`: Keep user stories to one user action and
   at most five Fibonacci story points.
 - `planning/verify-assumptions.md`: Write assumptions to a trace file and

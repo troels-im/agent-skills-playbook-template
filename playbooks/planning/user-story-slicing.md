@@ -30,6 +30,11 @@ permission states, validation failures, recovery paths, and protected-route
 states. Seven stories is not enough for a full webshop; password-based
 authentication can easily be seven stories by itself.
 
+When actions belong to a larger journey, first capture the journey with
+`playbooks/planning/user-flow-mapping.md`. User stories stay one-action; user
+flows capture ordering, branches, background work, retries, and state
+transitions.
+
 ## Point Reference
 
 - 1 point: simple copy, label, or configuration change, such as updating copy
@@ -50,6 +55,7 @@ Estimate: 3
 
 Details:
 - Screen '{screen name}': what the user sees, enters, clicks, and expects.
+- Flow links: `UF-001` step numbers, or `none`.
 - Entry: how the user reaches this state.
 - Success: what happens when the action works.
 - Failure: what happens when validation, permissions, network, or state fail.
@@ -76,6 +82,8 @@ machine touched by a product or prototype, cover:
 - loading state
 - retry or recovery path
 - navigation in and out of the flow
+- end-to-end journey coverage
+- asynchronous or background system steps
 - irreversible or destructive action confirmation
 - success feedback
 - failure feedback
@@ -102,6 +110,7 @@ Split stories by:
 
 - one actor
 - one action
+- one flow step
 - one state transition
 - one page or view action
 - one command
@@ -119,6 +128,7 @@ state transition, such as "view users", "disable a user", "view orders",
 ## Review Checklist
 
 - Does the story contain exactly one action?
+- Does it link to a user flow when it participates in a multi-step journey?
 - Does the story include enough screen, entry, success, failure, and not-allowed
   detail to remove ambiguity?
 - Are happy and unhappy paths covered for the area?

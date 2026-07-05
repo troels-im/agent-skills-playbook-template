@@ -31,21 +31,30 @@ tasks, reviews, and implementation commits.
    - goals
    - non-goals
    - user transformations
+   - user flows
    - user stories
    - requirements
    - acceptance criteria
    - risks
    - rollout or verification notes
-6. Link the PRD from `trace.yaml`.
-7. Create tickets with `split-into-tickets` before implementation. A PRD that
+6. Create one requirement file per durable requirement under
+   `work-trace/{trace-id}/requirements/REQ-###-short-title.md`.
+7. Link requirement files, user-flow files, and the PRD from `trace.yaml`.
+8. Create tickets with `split-into-tickets` before implementation. A PRD that
    fits in one slice still gets one ticket.
 
 Every persisted user story must follow `user-story-slicing.md`: one user
 action, Fibonacci estimate of 1, 2, 3, or 5, and no story larger than 5 points.
 Each story must include screen, entry, success, failure, and not-allowed
-details where relevant. The PRD must make clear that actions without user
-stories are out of scope.
-Every persisted user story must map to at least one acceptance criterion.
+details where relevant. Stories that participate in multi-step journeys must
+link to user-flow steps from `user-flow-mapping.md`. The PRD must make clear
+that actions without user stories are out of scope.
+Every persisted user story must map to at least one acceptance criterion and
+one requirement file.
+
+Requirements must not exist only as PRD prose. The PRD may summarize
+requirements, but each `REQ-*` must have a corresponding file in
+`requirements/`.
 
 ## Verification
 
@@ -53,6 +62,10 @@ Every persisted user story must map to at least one acceptance criterion.
 - Assumptions file exists and has been reviewed or explicitly deferred before
   PRD drafting.
 - Requirements and acceptance criteria have stable IDs or explicit deferrals.
+- Each `REQ-*` has a file under `requirements/` and is linked from
+  `trace.yaml`.
+- Multi-step product behavior has user-flow files linked from the PRD and
+  trace.
 - Persisted user stories are mapped to acceptance criteria.
 - Persisted user stories each describe one action and are no larger than 5
   points.

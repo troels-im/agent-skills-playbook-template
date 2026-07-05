@@ -25,6 +25,7 @@ Chairman. If subagents are unavailable, stop the loop and follow
 - Mode: assumption discovery or story consultation.
 - Whether the user allowed the agent to fill gaps without asking.
 - User-story sizing rules from `playbooks/planning/user-story-slicing.md`.
+- User-flow mapping rules from `playbooks/planning/user-flow-mapping.md`.
 
 ## Counsel Roles
 
@@ -44,6 +45,8 @@ Chairman. If subagents are unavailable, stop the loop and follow
    - questions for the user
    - assumptions it believes must be verified before story or PRD work
    - user transformations
+   - candidate user or system flows, including background automation when
+     relevant
    - if in assumption discovery mode, story areas and behavior surfaces that
      must be explored after assumptions are reviewed
    - if in story consultation mode, a thorough inventory of every plausible
@@ -64,6 +67,7 @@ Chairman. If subagents are unavailable, stop the loop and follow
    - assumptions that must be written to an assumptions file before user-story,
      PRD, spec, acceptance criteria, or ticket work starts
    - user transformations
+   - candidate user or system flows to capture before PRD creation
    - if in assumption discovery mode, story areas and behavior surfaces to
      cover after assumption review
    - if in story consultation mode, a thorough, deduplicated inventory of
@@ -92,6 +96,7 @@ reversible.
 - counsel questions
 - user transformations
 - assumptions to verify
+- candidate user or system flows
 - story areas and behavior surfaces, when in assumption discovery mode
 - thorough inventory of every plausible one-action user story, when in story
   consultation mode

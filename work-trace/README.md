@@ -23,6 +23,7 @@ work-trace/{trace-id}/
   requirements/
   acceptance/
   assumptions/
+  user-flows/
   tasks/
   adrs/
   prototypes/
@@ -44,6 +45,11 @@ Rules:
 - Write assumptions to
   `assumptions/ASM-YYYYMMDDTHHMMSSZ-short-slug.md` and review them before
   creating user stories, specs, PRDs, acceptance criteria, or tickets.
+- Put end-to-end journey maps under
+  `user-flows/UF-001-short-title.md` and link user stories to the relevant
+  flow steps.
+- Put every durable requirement in `requirements/REQ-###-short-title.md`.
+  PRDs may summarize requirements, but must not be the only place they exist.
 - Keep trace files concise enough for review.
 - Do not store secrets or raw private data.
 - Create or update the trace before implementation work begins.

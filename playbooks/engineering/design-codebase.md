@@ -4,7 +4,7 @@ domain: engineering
 summary: Improve module, interface, and seam design.
 created: 2026-07-04
 last_used: null
-last_updated: 2026-07-04
+last_updated: 2026-07-05
 ---
 
 # Design Codebase
@@ -21,8 +21,11 @@ need design attention.
 4. Look for deep modules: simple interface, meaningful behavior behind it.
 5. Identify shallow abstractions, duplicated decisions, and hard-to-test seams.
 6. Use `code-organization.md` when structure changes affect production code.
-7. Propose changes tied to requirements and verification.
-8. Record accepted design decisions as ADRs when durable.
+7. Use `playbooks/design/taste-calibration.md` and
+   `playbooks/design/ui-taste-review.md` when the design problem affects UI,
+   product feel, brand, or presentation quality.
+8. Propose changes tied to requirements and verification.
+9. Record accepted design decisions as ADRs when durable.
 
 ## Anti-Patterns
 

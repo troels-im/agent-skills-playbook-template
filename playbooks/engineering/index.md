@@ -14,6 +14,7 @@ Use these playbooks for language-neutral software engineering workflows.
 - `code-organization.md`: Organize code by domain, subdomain, vertical slices,
   and stable seams.
 - `design-codebase.md`: Improve module, interface, and seam design.
+  Use `playbooks/design/` when the concern is UI taste, brand, or product feel.
 - `model-domain.md`: Build shared domain language and decision records.
 - `prototype.md`: Build a disposable prototype to answer a focused question.
 - `research.md`: Research a question using high-trust sources and checked-in
