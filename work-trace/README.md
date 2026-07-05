@@ -23,6 +23,7 @@ work-trace/{trace-id}/
   tasks/
   adrs/
   prototypes/
+  runs/
   reviews/
   context/
   specs/
@@ -37,5 +38,8 @@ Rules:
 - Create or update the trace before implementation work begins.
 - Put prototypes under `work-trace/{trace-id}/prototypes/{prototype-slug}/`
   when they inform durable work.
+- Put flow run checklists under
+  `work-trace/{trace-id}/runs/run-YYYYMMDDTHHMMSSZ-short-slug.md`.
+- Use UTC timestamped slugs for local ids that could collide.
 - Use `work-trace/_template/` for new traces.
 - Use `work-trace/examples/` to inspect provider-specific examples.

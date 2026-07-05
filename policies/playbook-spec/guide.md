@@ -11,3 +11,6 @@ with YAML front matter containing:
 - `last_updated`
 
 Use `YYYY-MM-DD` dates. `last_used` may be `null`.
+
+Every flow markdown file under `flows/`, except `index.md`, must include
+`title`, `summary`, `created`, and `last_updated` front matter.

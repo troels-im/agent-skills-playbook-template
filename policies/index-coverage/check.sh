@@ -5,14 +5,14 @@ cd "$(dirname "$0")/../.."
 
 violations=""
 
-for dir in docs playbooks policies; do
+for dir in docs flows playbooks policies; do
   if [ -d "$dir" ] && [ ! -f "$dir/index.md" ]; then
     violations="${violations}${dir}: missing index.md
 "
   fi
 done
 
-find playbooks policies docs -mindepth 1 -maxdepth 2 -type d 2>/dev/null | sort |
+find flows playbooks policies docs -mindepth 1 -maxdepth 2 -type d 2>/dev/null | sort |
 while IFS= read -r dir; do
   [ -n "$dir" ] || continue
   case "$dir" in

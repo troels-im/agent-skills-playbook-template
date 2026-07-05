@@ -8,7 +8,7 @@
 - `change-checkpoint/`: uncommitted local changes over 500 changed lines should
   be committed as a coherent checkpoint.
 - `skill-spec/`: Agent Skill entrypoints must have required front matter.
-- `playbook-spec/`: playbooks must use required front matter.
+- `playbook-spec/`: playbooks and flows must use required front matter.
 - `index-coverage/`: meaningful folders should have nearby index files.
 - `generated-artifacts/`: generated outputs and dependency folders should not
   be committed.

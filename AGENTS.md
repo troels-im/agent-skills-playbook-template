@@ -58,6 +58,7 @@ radius is unclear.
 ## Repository Layout
 
 - `index.md`: root context map for agents and humans.
+- `flows/`: user-facing multi-step development loops.
 - `playbooks/`: reusable workflows with progressive loading.
 - `policies/`: repository checks run by `just test`.
 - `work-trace/`: issue-backed planning artifacts for non-trivial work.

@@ -13,6 +13,10 @@ can discover the right workflow without loading a pile of irrelevant context.
 - Progressive `index.md` files that route agents through the repo.
 - A tiny `.agents/skills/playbook-system/SKILL.md` discovery hook for agents
   that support Agent Skills.
+- A tiny `.agents/skills/lets/SKILL.md` discovery hook for long-running
+  development flows.
+- `flows/` loops for creating products, prototypes, bug fixes, research-backed
+  decisions, documentation, and codebase improvements.
 - Playbooks for planning, reviews, retrospectives, traceable issue work,
   context save/restore, safety, documentation, and quality.
 - `work-trace/{issue-id}/` conventions for checked-in planning artifacts.
@@ -30,6 +34,8 @@ This project is designed for people looking for:
 - progressive disclosure for agents
 - docs-as-code for AI agents
 - context engineering repository template
+- AI development workflow template
+- agentic development flows
 
 ## Quick Start
 

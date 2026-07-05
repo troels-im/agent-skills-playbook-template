@@ -16,6 +16,7 @@ checked in, cross-linked, and verifiable through `just test`.
 - Review: checked-in review record, commonly from `review-turn`.
 - Prototype: checked-in disposable artifact that answers a focused question
   before production implementation.
+- Run: checked-in flow checklist for a long-running `/lets` flow.
 
 ## Directory Convention
 
@@ -40,6 +41,7 @@ work-trace/{trace-id}/
   tasks/
   adrs/
   prototypes/
+  runs/
   reviews/
   context/
   specs/
@@ -58,6 +60,8 @@ It records:
 - prototypes
 - reviews
 - commits
+- code references
+- test references
 
 Prototypes live under:
 
@@ -68,8 +72,15 @@ work-trace/{trace-id}/prototypes/{prototype-slug}/
 They are disposable, but not invisible: if a prototype informs a ticket,
 requirement, ADR, or task, it should be checked in and linked from
 `trace.yaml`.
-- code references
-- test references
+
+Flow run checklists live under:
+
+```text
+work-trace/{trace-id}/runs/run-YYYYMMDDTHHMMSSZ-short-slug.md
+```
+
+Use UTC timestamped slugs for generated run names and local ids that could
+collide.
 
 ## Bidirectional Links
 

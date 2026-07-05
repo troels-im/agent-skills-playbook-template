@@ -15,9 +15,11 @@ docs-as-code workflow.
 3. Read the nearest child `index.md` for the area being changed.
 4. For repeated work, read `playbooks/index.md` and the smallest matching
    playbook.
-5. If no playbook matches, use
+5. For long-running user goals, read `flows/index.md` and the smallest matching
+   flow.
+6. If no playbook matches, use
    `playbooks/repository/no-matching-playbook.md`.
-6. Use `just test` for repository verification.
+7. Use `just test` for repository verification.
 
 Do not assume a language, package manager, build system, deployment platform, or
 test framework beyond the `just test` entrypoint.

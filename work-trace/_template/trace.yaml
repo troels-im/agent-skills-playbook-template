@@ -16,6 +16,8 @@ artifacts:
   adrs: []
   prototypes:
     - prototypes/example-prototype/README.md
+  runs:
+    - runs/run-20260705T000000Z-example.md
   reviews: []
 requirements:
   - id: REQ-001
