@@ -23,6 +23,17 @@ Use this skill as the low-token command surface for repository flows.
    `XX% / YY% / ZZ%: message`.
 9. Use `just test` when the flow or task requires repository verification.
 
+## User Input Gates
+
+When a flow step needs user input, approval, a product decision, or feedback to
+continue correctly, pause the loop and ask. Do not infer missing decisions or
+continue on guessed requirements.
+
+Continue without asking only when the user explicitly says not to disturb them,
+not to ask, to proceed with best judgment, or gives an equivalent instruction.
+When doing so, record the assumption in the run checklist and keep it reversible
+where possible.
+
 If no flow matches, say that clearly and route through
 `playbooks/repository/choose-workflow.md`.
 
