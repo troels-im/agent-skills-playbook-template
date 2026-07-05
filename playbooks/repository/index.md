@@ -16,6 +16,8 @@ retrospectives, policies, and reusable workflow capture.
 - `choose-workflow.md`: Route a user request to the smallest matching playbook
   or trace workflow.
 - `evaluation-playbook.md`: Design evidence-rich product or workflow evals.
+- `five-counsel-consultation.md`: Use five subagent lenses to generate
+  questions, user transformations, user stories, and one concrete next step.
 - `implementation-playbook.md`: Move from idea to prototype to production work
   without assuming a stack.
 - `incident-retrospective.md`: Write evidence-based retrospectives.
@@ -25,6 +27,8 @@ retrospectives, policies, and reusable workflow capture.
   progressive loading, and lifecycle rules.
 - `post-task-playbook-retrospective.md`: Feed task lessons back into playbooks.
 - `repository-policy-change.md`: Add or change repository policy checks.
+- `red-blue-judge-review.md`: Run a general subagent red-team, blue-team,
+  judge review for artifacts, plans, stories, specs, PRDs, code, or QA results.
 - `review-turn.md`: Run a subagent red-team, blue-team, judge review against
   explicit acceptance criteria.
 - `setup-agent-playbooks.md`: Configure tracker, trace, docs, and review

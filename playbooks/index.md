@@ -74,6 +74,9 @@ Start at `repository/index.md`.
   matching playbook or trace workflow.
 - `repository/evaluation-playbook.md`: Design evidence-rich product or workflow
   evaluations.
+- `repository/five-counsel-consultation.md`: Use five subagent lenses to
+  generate questions, user transformations, user stories, and one concrete next
+  step.
 - `repository/implementation-playbook.md`: Move from idea to prototype to
   production work without assuming a stack.
 - `repository/incident-retrospective.md`: Write evidence-based retrospectives.
@@ -86,6 +89,9 @@ Start at `repository/index.md`.
 - `repository/post-task-playbook-retrospective.md`: Feed task lessons back into
   the playbook system.
 - `repository/repository-policy-change.md`: Add or change repository policies.
+- `repository/red-blue-judge-review.md`: Run a general subagent red-team,
+  blue-team, judge review for artifacts, plans, stories, specs, PRDs, code, or
+  QA results.
 - `repository/review-turn.md`: Run a subagent red-team, blue-team, judge review
   against explicit acceptance criteria.
 - `repository/setup-agent-playbooks.md`: Configure tracker, trace, docs, and

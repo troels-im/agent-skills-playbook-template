@@ -27,6 +27,8 @@ tasks, reviews, and implementation commits.
    - users or stakeholders
    - goals
    - non-goals
+   - user transformations
+   - user stories
    - requirements
    - acceptance criteria
    - risks
@@ -35,8 +37,11 @@ tasks, reviews, and implementation commits.
 6. Split execution work with `split-into-tickets` when the PRD is too large for
    one ticket.
 
+Every persisted user story must map to at least one acceptance criterion.
+
 ## Verification
 
 - PRD exists in the work trace.
 - Requirements and acceptance criteria have stable IDs or explicit deferrals.
+- Persisted user stories are mapped to acceptance criteria.
 - `just turn-test` passes when repository files change.
