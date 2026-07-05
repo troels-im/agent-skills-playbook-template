@@ -25,6 +25,9 @@ workflow detail.
 - `just test` is a compatibility alias for `just turn-test`.
 - Do not assume a programming language, build system, package manager, test
   framework, cloud, database, or deployment platform.
+- For production code, prefer domain/subdomain/vertical organization where
+  practical, and use interfaces, traits, ports, repositories, services, views,
+  or APIs only where they clarify stable seams.
 - Keep instructions and examples tool-neutral unless a file is explicitly about
   a named agent surface such as Codex, Claude Code, Copilot, or Cursor.
 - Track the exact playbooks actually followed.

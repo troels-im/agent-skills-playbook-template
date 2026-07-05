@@ -16,12 +16,14 @@ unclear.
 
 1. Collect terms from users, docs, code, tickets, and traces.
 2. Define each term in project language.
-3. Mark avoided synonyms and ambiguous terms.
-4. Link terms to requirements, ADRs, and code areas when useful.
-5. Update the nearest context or glossary document.
+3. Identify domains, subdomains, and vertical user outcomes.
+4. Mark avoided synonyms and ambiguous terms.
+5. Link terms to requirements, ADRs, and code areas when useful.
+6. Update the nearest context or glossary document.
 
 ## Output
 
 - glossary entries
 - domain boundary notes
+- subdomain and vertical notes
 - ADRs for durable terminology decisions

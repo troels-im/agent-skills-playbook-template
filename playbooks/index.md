@@ -23,6 +23,8 @@ Start at `engineering/index.md`.
 
 - `engineering/debug-bug.md`: Diagnose and fix a bug with a
   reproduce-minimize-fix loop.
+- `engineering/code-organization.md`: Organize code by domain, subdomain,
+  vertical slices, and stable seams.
 - `engineering/design-codebase.md`: Improve module, interface, and seam design.
 - `engineering/model-domain.md`: Build shared domain language and decision
   records.

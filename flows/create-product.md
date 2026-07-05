@@ -28,9 +28,11 @@ Pre-execute:
    PRD creation.
 8. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
    user story must become or map to acceptance criteria.
-9. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
+9. [ ] Define the domain, subdomain, verticals, and code organization strategy
+   with `playbooks/engineering/code-organization.md`.
+10. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
    durable explanation.
-10. [ ] Create issues with `playbooks/planning/split-into-tickets.md`.
+11. [ ] Create issues with `playbooks/planning/split-into-tickets.md`.
 
 For every issue:
 

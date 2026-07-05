@@ -11,6 +11,8 @@ Use these playbooks for language-neutral software engineering workflows.
 ## Playbooks
 
 - `debug-bug.md`: Diagnose and fix a bug with a reproduce-minimize-fix loop.
+- `code-organization.md`: Organize code by domain, subdomain, vertical slices,
+  and stable seams.
 - `design-codebase.md`: Improve module, interface, and seam design.
 - `model-domain.md`: Build shared domain language and decision records.
 - `prototype.md`: Build a disposable prototype to answer a focused question.

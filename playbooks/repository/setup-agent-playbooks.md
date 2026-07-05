@@ -28,15 +28,25 @@ stack assumptions.
 3. Choose trace directory convention, defaulting to provider-prefixed ids such
    as `work-trace/github-123`.
 4. Choose where PRDs, ADRs, requirements, tasks, and reviews live.
-5. Confirm whether subagents are available for `review-turn`.
-6. Remove playbooks that do not apply.
-7. Add stack-specific checks behind `just turn-test` only after the project chooses
+5. Capture the architecture profile:
+   - domains and known subdomains
+   - preferred vertical slice layout
+   - backend conventions for domain, services/use cases, interfaces or traits,
+     repositories/adapters, API, views, and transport
+   - frontend conventions for features/domains, routes/views, components,
+     state/hooks, API clients, schemas, and adapters
+   - where interfaces, traits, ports, repositories, and services are expected
+     or discouraged
+6. Confirm whether subagents are available for `review-turn` and flow reviews.
+7. Remove playbooks that do not apply.
+8. Add stack-specific checks behind `just turn-test` only after the project chooses
    them.
 
 ## Output
 
 - tracker provider configuration
 - trace layout decision
+- architecture profile and code organization conventions
 - review-turn subagent availability note
 - updated indexes and policies
 
