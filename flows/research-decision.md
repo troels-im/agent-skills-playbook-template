@@ -24,8 +24,11 @@ If the decision creates implementation work:
 1. [ ] Write a spec with `playbooks/planning/spec.md`.
 2. [ ] Create issues with `playbooks/planning/split-into-tickets.md`.
 3. [ ] Execute each issue with `playbooks/repository/implementation-playbook.md`.
-4. [ ] Run focused checks and `just test`.
-5. [ ] Commit with trace trailers.
+4. [ ] Run focused checks and `just turn-test`.
+5. [ ] Run `just turn-test`.
+6. [ ] Commit with trace trailers.
+7. [ ] Run `just pr-test`.
+8. [ ] Fix failing PR tests and rerun until passing or blocked.
 
 ## Progress
 

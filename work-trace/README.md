@@ -43,3 +43,5 @@ Rules:
 - Use UTC timestamped slugs for local ids that could collide.
 - Use `work-trace/_template/` for new traces.
 - Use `work-trace/examples/` to inspect provider-specific examples.
+- Map every requirement to code through `code_refs` and a commit with a
+  `Trace-Req` trailer.

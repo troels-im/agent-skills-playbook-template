@@ -25,4 +25,4 @@ question requires external or source-backed research.
 
 - Findings cite sources.
 - Recommendations trace to evidence.
-- `just test` passes when repository files change.
+- `just turn-test` passes when repository files change.

@@ -75,7 +75,7 @@ At task finish:
 
 - follow `post-task-playbook-retrospective.md` at the depth required by the task
   risk class
-- run `just test` when required by the accepted scope
+- run `just turn-test` when required by the accepted scope
 - avoid recursively running another retrospective for the retrospective itself
 
 ## Quality Bar

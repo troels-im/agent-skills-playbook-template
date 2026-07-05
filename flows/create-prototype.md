@@ -23,7 +23,9 @@ Pre-execute:
 7. [ ] Revise from feedback until the prototype answers the question or the
    user stops the loop.
 8. [ ] Record learnings in the trace.
-9. [ ] Decide whether to discard, iterate later, or convert to product work.
+9. [ ] Run `just pr-test` when repository files changed.
+10. [ ] Fix failing PR tests and rerun until passing or blocked.
+11. [ ] Decide whether to discard, iterate later, or convert to product work.
 
 If converting to product work:
 

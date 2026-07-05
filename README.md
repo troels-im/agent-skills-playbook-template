@@ -20,7 +20,8 @@ can discover the right workflow without loading a pile of irrelevant context.
 - Playbooks for planning, reviews, retrospectives, traceable issue work,
   context save/restore, safety, documentation, and quality.
 - `work-trace/{issue-id}/` conventions for checked-in planning artifacts.
-- Language-neutral policy checks run through `just test`.
+- Language-neutral turn checks run through `just turn-test`.
+- PR traceability checks run through `just pr-test`.
 
 ## Search Terms
 
@@ -42,17 +43,19 @@ This project is designed for people looking for:
 1. Copy this template into a repository.
 2. Edit `index.md` and `AGENTS.md` to describe the real project.
 3. Keep only the playbooks that apply.
-4. Preserve the `just test` entrypoint.
-5. Add project-specific checks behind `just test` without assuming they exist in
-   the template itself.
+4. Preserve the `just turn-test` and `just pr-test` entrypoints.
+5. Add project-specific checks behind `just turn-test` or `just pr-test`
+   without assuming they exist in the template itself.
 
 ## Verification
 
 Run:
 
 ```sh
-just test
+just turn-test
+just pr-test
 ```
 
 The template assumes `just` is available. It does not assume any other language,
-runtime, build system, or package manager.
+runtime, build system, or package manager. `just test` remains as a
+compatibility alias for `just turn-test`.

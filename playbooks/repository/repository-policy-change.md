@@ -1,7 +1,7 @@
 ---
 title: Repository Policy Change
 domain: repository
-summary: Add or change repository policy checks behind the just test contract.
+summary: Add or change repository policy checks behind the just turn-test contract.
 created: 2026-07-04
 last_used: null
 last_updated: 2026-07-04
@@ -10,7 +10,7 @@ last_updated: 2026-07-04
 # Repository Policy Change
 
 Use this playbook when adding, removing, or changing checks under `policies/` or
-the `just test` contract.
+the `just turn-test` contract.
 
 ## Goal
 
@@ -30,7 +30,7 @@ easy to understand when it fails.
 5. Print actionable failure messages with the policy guide path.
 6. Avoid introducing language-specific tools unless the consuming repository
    explicitly chooses them.
-7. Run focused policy checks and `just test`.
+7. Run focused policy checks and `just turn-test`.
 
 ## Quality Bar
 

@@ -46,4 +46,4 @@ commits: []
 code_refs: []
 test_refs:
   - id: TEST-001
-    command: just test
+    command: just turn-test

@@ -35,4 +35,4 @@ choice disappears into implementation.
 
 - ADR is checked in.
 - ADR links to at least one requirement, task, or ticket.
-- `just test` passes when repository files change.
+- `just turn-test` passes when repository files change.

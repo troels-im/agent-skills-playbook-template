@@ -48,8 +48,16 @@ For every ticket:
 1. [ ] Plan the ticket with `playbooks/repository/plan-issue.md`.
 2. [ ] Address every task in the plan with the relevant implementation
    playbook.
-3. [ ] Run focused checks and `just test`.
+3. [ ] Run focused checks and `just turn-test`.
 4. [ ] Mark completed tasks with `[v]`.
-5. [ ] Update trace artifacts and commit with trace trailers when complete.
+5. [ ] Update trace artifacts.
+6. [ ] Run `just turn-test` before committing.
+7. [ ] Commit with trace trailers when complete.
+
+## Finish
+
+1. [ ] Run `just pr-test`.
+2. [ ] Fix failing PR tests.
+3. [ ] Repeat until `just pr-test` passes or a real blocker is recorded.
 
 Only work on details specified in the current goal.

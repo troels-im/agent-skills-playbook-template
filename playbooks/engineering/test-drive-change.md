@@ -20,7 +20,7 @@ manual failing check first.
 4. Implement the smallest change to pass.
 5. Refactor only while preserving the check.
 6. Record test evidence in the task and requirement trace.
-7. Run focused checks and `just test`.
+7. Run focused checks and `just turn-test`.
 
 ## Quality Bar
 

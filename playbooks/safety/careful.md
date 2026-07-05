@@ -20,7 +20,7 @@ permission changes, history changes, or operations that are hard to reverse.
 4. Avoid destructive git commands unless explicitly requested.
 5. For deletes, confirm the target is generated, temporary, or explicitly in
    scope.
-6. Run focused verification and `just test` when repository files change.
+6. Run focused verification and `just turn-test` when repository files change.
 
 ## Safe Exceptions
 

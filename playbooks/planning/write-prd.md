@@ -39,4 +39,4 @@ tasks, reviews, and implementation commits.
 
 - PRD exists in the work trace.
 - Requirements and acceptance criteria have stable IDs or explicit deferrals.
-- `just test` passes when repository files change.
+- `just turn-test` passes when repository files change.

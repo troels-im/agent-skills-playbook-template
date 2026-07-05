@@ -21,7 +21,7 @@ The classification should answer:
 - what changed or will change
 - whether the change affects executable behavior
 - which focused checks prove the touched surface is still valid
-- whether `just test` is required
+- whether `just turn-test` is required
 - whether review was explicitly requested and has clear acceptance criteria
 
 ## Input Check
@@ -56,7 +56,7 @@ impact.
 Required verification:
 
 - focused checks for touched files
-- `just test` when practical before handoff
+- `just turn-test` when practical before handoff
 
 Escalate to Class 2 when content changes agent operating rules or repository
 governance.
@@ -69,7 +69,7 @@ CI, or shared developer tooling.
 Required verification:
 
 - focused checks for touched surface
-- `just test`
+- `just turn-test`
 
 ### Class 3: Production Or High-Risk Change
 
@@ -79,7 +79,7 @@ changes, migrations, security-sensitive behavior, or user-facing behavior.
 Required verification:
 
 - focused checks for touched surface
-- `just test`
+- `just turn-test`
 - any domain-specific checks named by the consuming repository or playbook
 
 ## Output

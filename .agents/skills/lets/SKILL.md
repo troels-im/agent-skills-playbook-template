@@ -21,7 +21,9 @@ Use this skill as the low-token command surface for repository flows.
    step.
 8. Prefix progress updates with the format required by the flow:
    `XX% / YY% / ZZ%: message`.
-9. Use `just test` when the flow or task requires repository verification.
+9. Run `just turn-test` before every commit.
+10. At the final step of a flow, run `just pr-test`, fix failing PR tests, and
+    repeat until the PR tests pass or a real blocker is recorded.
 
 ## User Input Gates
 

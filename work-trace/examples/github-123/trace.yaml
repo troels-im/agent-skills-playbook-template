@@ -44,12 +44,13 @@ tasks:
         - AC-001
 commits:
   - hash: example
+    subject: "feat(github-123): add commit trailer policy"
     trailers:
       Trace-Ticket: github:example/example-repo#123
       Trace-Task: TASK-001
       Trace-Req: REQ-001
       Trace-AC: AC-001
-      Trace-Test: just test
+      Trace-Test: just turn-test
 code_refs:
   - path: policies/commit-trailers/check.sh
     requirements:
@@ -58,4 +59,4 @@ code_refs:
       - TASK-001
 test_refs:
   - id: TEST-001
-    command: just test
+    command: just turn-test

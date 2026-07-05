@@ -23,7 +23,7 @@ documentation.
    - explanation
 4. Draft concise documentation with examples grounded in the repository.
 5. Keep agent workflow instructions in `playbooks/`, not human docs.
-6. Run focused checks and `just test` when repository files change.
+6. Run focused checks and `just turn-test` when repository files change.
 
 ## Quality Bar
 

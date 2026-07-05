@@ -24,7 +24,7 @@ consumer repository's own stack choices.
 - Make dependencies and framework choices explicit.
 - Keep prototype code separate from production code unless the consuming
   repository has a different rule.
-- Use `just test` as the shared verification entrypoint.
+- Use `just turn-test` as the shared verification entrypoint.
 
 ## Workflow
 
@@ -34,7 +34,7 @@ consumer repository's own stack choices.
 4. Identify current patterns before editing.
 5. Implement the smallest coherent slice.
 6. Add or update tests, docs, traces, or examples required by the scope.
-7. Run focused verification, then `just test` when required.
+7. Run focused verification, then `just turn-test` when required.
 8. Update trace artifacts and issue status when scope or acceptance changes.
 9. Finish with a concise handoff: what changed, verification, risks, and next
    steps.

@@ -26,9 +26,12 @@ For every issue:
 
 1. [ ] Plan the issue with `playbooks/repository/plan-issue.md`.
 2. [ ] Implement the smallest design improvement.
-3. [ ] Run focused checks and `just test`.
+3. [ ] Run focused checks and `just turn-test`.
 4. [ ] Review when requested or required.
-5. [ ] Commit with trace trailers.
+5. [ ] Run `just turn-test`.
+6. [ ] Commit with trace trailers.
+7. [ ] Run `just pr-test`.
+8. [ ] Fix failing PR tests and rerun until passing or blocked.
 
 ## Progress
 

@@ -71,4 +71,4 @@ This proves the work is issue-backed before implementation begins.
 
 - The issue exists and is linked from the trace.
 - Requirements and acceptance criteria map to specs or explicit deferrals.
-- `just test` passes before handoff for repository changes.
+- `just turn-test` passes before handoff for repository changes.

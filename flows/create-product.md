@@ -27,17 +27,19 @@ For every issue:
 1. [ ] Plan the issue with `playbooks/repository/plan-issue.md`.
 2. [ ] Address every task with `playbooks/repository/implementation-playbook.md`
    and `playbooks/engineering/test-drive-change.md` where useful.
-3. [ ] Run focused checks and `just test`.
+3. [ ] Run focused checks and `just turn-test`.
 4. [ ] Mark completed tasks with `[v]`.
 5. [ ] Review with `playbooks/repository/review-turn.md` when requested or
    required by acceptance criteria.
-6. [ ] Commit with trace trailers.
+6. [ ] Run `just turn-test`.
+7. [ ] Commit with trace trailers.
 
 Finish:
 
 1. [ ] Verify the PRD acceptance criteria.
-2. [ ] Run `just test`.
-3. [ ] Summarize shipped work, open risks, and follow-up tickets.
+2. [ ] Run `just pr-test`.
+3. [ ] Fix failing PR tests and rerun until passing or blocked.
+4. [ ] Summarize shipped work, open risks, and follow-up tickets.
 
 ## Progress
 

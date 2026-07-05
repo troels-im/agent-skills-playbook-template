@@ -16,7 +16,7 @@ without a narrower domain playbook.
 
 1. Read `AGENTS.md`, `index.md`, and `policies/index.md`.
 2. Inspect repository status.
-3. Run `just test`.
+3. Run `just turn-test`.
 4. Review failing policies or checks.
 5. Summarize:
    - checks run

@@ -38,7 +38,7 @@ conversation.
    - verification
    - anti-patterns
 5. Update the nearest index.
-6. Run `just test`.
+6. Run `just turn-test`.
 
 ## Quality Bar
 

@@ -28,7 +28,7 @@ instructions indefinitely.
    - a work trace only
 3. Add the lesson with evidence and scope.
 4. Avoid adding personal preference or one-off task details.
-5. Run `just test` when repository files change.
+5. Run `just turn-test` when repository files change.
 
 ## Anti-Patterns
 

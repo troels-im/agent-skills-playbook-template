@@ -11,7 +11,7 @@ Add a policy check for task-completion trace trailers.
 
 ## Verification
 
-- `just test`
+- `just turn-test`
 
 ## Status
 

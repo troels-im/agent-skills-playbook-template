@@ -31,7 +31,7 @@ Produce an evidence-based retrospective that explains:
    review.
 5. Record corrective actions with owners or follow-up issue ids.
 6. Update playbooks, policies, or indexes when the lesson is reusable.
-7. Run `just test` when repository files change.
+7. Run `just turn-test` when repository files change.
 
 ## Quality Bar
 

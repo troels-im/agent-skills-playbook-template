@@ -19,12 +19,13 @@ This is the first AI-facing map for the repository.
 - `.agents/skills/lets/SKILL.md`: optional low-token entrypoint for `/lets`
   flow commands.
 - `playbooks/index.md`: reusable task workflows and workflow governance.
-- `policies/index.md`: checks run by `just test`.
+- `policies/index.md`: checks run by `just turn-test` and `just pr-test`.
 - `work-trace/README.md`: checked-in planning artifacts for issue-backed work.
 
 ## Core Contract
 
-- `just test` is the only required verification entrypoint.
+- `just turn-test` is the required pre-commit verification entrypoint.
+- `just pr-test` is the required PR or final flow verification entrypoint.
 - The repository is language-neutral by design.
 - New domains should add short local `index.md` files before adding large
   instruction files.

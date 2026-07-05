@@ -8,7 +8,7 @@ Task completion commits must carry machine-readable trace trailers.
 
 - Task: `TASK-001`
 - Code: `policies/commit-trailers/check.sh`
-- Tests: `just test`
+- Tests: `just turn-test`
 
 ## Status
 

@@ -15,6 +15,7 @@ else
 fi
 
 violations=""
+subject_regex='^(feat|fix|docs|test|refactor|chore|perf|build|ci|style|revert)([(][A-Za-z0-9._/-]+[)])?!?: .+'
 
 for commit in $commits; do
   changed_done_task="$(
@@ -22,9 +23,17 @@ for commit in $commits; do
       grep -E '^\+(Done|Validated)$' || true
   )"
 
-  [ -n "$changed_done_task" ] || continue
-
   message="$(git log -1 --format=%B "$commit")"
+  has_trace_trailer="$(printf '%s\n' "$message" | grep -E '^Trace-[A-Za-z]+: ' || true)"
+
+  [ -n "$changed_done_task" ] || [ -n "$has_trace_trailer" ] || continue
+
+  subject="$(git log -1 --format=%s "$commit")"
+  if ! printf '%s\n' "$subject" | grep -Eq "$subject_regex"; then
+    violations="${violations}${commit}: trace commit subject is not conventional
+"
+  fi
+
   for trailer in Trace-Task Trace-Req Trace-Test; do
     if ! printf '%s\n' "$message" | grep -Eq "^${trailer}: "; then
       violations="${violations}${commit}: task completion commit missing ${trailer} trailer
@@ -39,4 +48,4 @@ if [ -n "$violations" ]; then
   exit 1
 fi
 
-printf 'Completion commit trailers are valid.\n'
+printf 'Trace commit trailers are valid.\n'

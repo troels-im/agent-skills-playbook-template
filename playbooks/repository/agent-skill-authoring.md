@@ -42,7 +42,7 @@ should be used.
 3. Put only essential workflow and routing instructions in `SKILL.md`.
 4. Point to playbooks, indexes, scripts, references, or assets for details.
 5. Avoid duplicating large instructions already present elsewhere.
-6. Run `just test` after adding or changing the skill.
+6. Run `just turn-test` after adding or changing the skill.
 
 ## Quality Bar
 

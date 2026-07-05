@@ -20,9 +20,12 @@ Pre-execute:
    `playbooks/documentation/document-generate.md`.
 5. [ ] Link docs to requirements, ADRs, or traces when they explain durable
    behavior.
-6. [ ] Run focused checks and `just test`.
+6. [ ] Run focused checks and `just turn-test`.
 7. [ ] Review with the user and revise once for clarity.
-8. [ ] Commit with trace trailers when the docs complete a traced task.
+8. [ ] Run `just turn-test`.
+9. [ ] Commit with trace trailers when the docs complete a traced task.
+10. [ ] Run `just pr-test`.
+11. [ ] Fix failing PR tests and rerun until passing or blocked.
 
 ## Progress
 

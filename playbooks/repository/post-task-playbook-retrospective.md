@@ -40,7 +40,7 @@ The retrospective should answer:
 2. Identify surprises, blockers, missing instructions, or reusable decisions.
 3. Decide whether to update an existing playbook, create a new playbook, or do
    nothing.
-4. If playbooks changed, run `just test`.
+4. If playbooks changed, run `just turn-test`.
 5. Report updates made or explicitly skipped.
 
 ## Anti-Patterns

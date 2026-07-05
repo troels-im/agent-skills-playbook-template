@@ -24,11 +24,14 @@ For the fix:
 
 1. [ ] Fix the smallest confirmed cause.
 2. [ ] Add regression coverage where the consuming repo supports it.
-3. [ ] Run focused checks and `just test`.
+3. [ ] Run focused checks and `just turn-test`.
 4. [ ] Mark completed tasks with `[v]`.
 5. [ ] Review with `playbooks/repository/review-turn.md` when requested or
    required.
-6. [ ] Commit with trace trailers.
+6. [ ] Run `just turn-test`.
+7. [ ] Commit with trace trailers.
+8. [ ] Run `just pr-test`.
+9. [ ] Fix failing PR tests and rerun until passing or blocked.
 
 ## Progress
 

@@ -21,7 +21,7 @@ problems.
 5. Fix the smallest confirmed cause.
 6. Add regression coverage where the consuming repo supports it.
 7. Link the fix to requirements, tasks, and commits.
-8. Run focused verification and `just test`.
+8. Run focused verification and `just turn-test`.
 
 ## Anti-Patterns
 

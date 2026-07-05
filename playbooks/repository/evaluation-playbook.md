@@ -31,7 +31,7 @@ contract that caused them.
    - pass/fail criteria
 6. Make failure output point to the missing fact, broken contract, or wrong
    decision.
-7. Wire the eval behind `just test` only when it is deterministic and cheap
+7. Wire the eval behind `just turn-test` only when it is deterministic and cheap
    enough for the repository.
 
 ## Quality Bar

@@ -19,7 +19,7 @@ defined scope.
 3. Run focused checks to reproduce issues.
 4. Fix the smallest set of valid issues.
 5. Re-run focused checks.
-6. Run `just test` when repository files changed.
+6. Run `just turn-test` when repository files changed.
 7. Report what was fixed, what was verified, and what remains.
 
 ## Anti-Patterns

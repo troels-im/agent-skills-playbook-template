@@ -1,8 +1,14 @@
 default:
-    just test
+    just turn-test
 
 test:
-    ./policies/check.sh
+    just turn-test
+
+turn-test:
+    ./policies/check.sh turn
+
+pr-test:
+    ./policies/check.sh pr
 
 policies:
-    ./policies/check.sh
+    just turn-test

@@ -40,4 +40,4 @@ to the checked-in plan.
 
 - Every created ticket links back to the checked-in trace.
 - Every requirement is mapped to a ticket or explicit deferral.
-- `just test` passes when repository files change.
+- `just turn-test` passes when repository files change.

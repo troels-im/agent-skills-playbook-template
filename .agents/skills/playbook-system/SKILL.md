@@ -1,6 +1,6 @@
 ---
 name: playbook-system
-description: Use when working in a repository based on agent-skills-playbook-template; loads AGENTS.md, progressive indexes, repository playbooks, work traces, and just test verification without assuming a language stack.
+description: Use when working in a repository based on agent-skills-playbook-template; loads AGENTS.md, progressive indexes, repository playbooks, work traces, and turn-test/pr-test verification without assuming a language stack.
 ---
 
 # Playbook System
@@ -19,7 +19,7 @@ docs-as-code workflow.
    flow.
 6. If no playbook matches, use
    `playbooks/repository/no-matching-playbook.md`.
-7. Use `just test` for repository verification.
+7. Use `just turn-test` before commits and `just pr-test` before PR handoff.
 
 Do not assume a language, package manager, build system, deployment platform, or
-test framework beyond the `just test` entrypoint.
+test framework beyond the `just turn-test` and `just pr-test` entrypoints.

@@ -1,7 +1,8 @@
 # Traceability Model
 
 This template is trace-first: durable planning and decision artifacts should be
-checked in, cross-linked, and verifiable through `just test`.
+checked in, cross-linked, and verifiable through `just turn-test` and
+`just pr-test`.
 
 ## Vocabulary
 
@@ -63,6 +64,10 @@ It records:
 - code references
 - test references
 
+Every requirement must map to code through a commit. In practice, each
+requirement needs a code reference and a commit entry with a `Trace-Req`
+trailer.
+
 Prototypes live under:
 
 ```text
@@ -112,7 +117,7 @@ Trace-Ticket: github:owner/repo#123
 Trace-Task: TASK-003
 Trace-Req: REQ-008
 Trace-AC: AC-012
-Trace-Test: just test
+Trace-Test: just turn-test
 ```
 
 When a task moves to `Done` or `Validated`, the completion commit must include

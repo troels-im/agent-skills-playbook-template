@@ -33,7 +33,7 @@ playbook.
 ## Verification
 
 - Use the verification required by the task risk class.
-- Run `just test` for governance, tooling, or high-risk changes.
+- Run `just turn-test` for governance, tooling, or high-risk changes.
 - For read-only Class 0 work, no repository verification is required.
 
 ## Anti-Patterns

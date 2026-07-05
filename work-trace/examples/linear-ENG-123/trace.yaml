@@ -40,7 +40,15 @@ tasks:
         - REQ-001
       acceptance:
         - AC-001
-commits: []
+commits:
+  - hash: example
+    subject: "docs(linear-ENG-123): add linear trace fixture"
+    trailers:
+      Trace-Ticket: linear:ENG-123
+      Trace-Task: TASK-001
+      Trace-Req: REQ-001
+      Trace-AC: AC-001
+      Trace-Test: just turn-test
 code_refs:
   - path: work-trace/examples/linear-ENG-123/trace.yaml
     requirements:
@@ -49,4 +57,4 @@ code_refs:
       - TASK-001
 test_refs:
   - id: TEST-001
-    command: just test
+    command: just turn-test

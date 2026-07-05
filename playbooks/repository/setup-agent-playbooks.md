@@ -19,7 +19,7 @@ stack assumptions.
 
 ## Workflow
 
-1. Confirm the repository's `just test` entrypoint.
+1. Confirm the repository's `just turn-test` entrypoint.
 2. Choose tracker provider:
    - GitHub
    - GitLab
@@ -30,7 +30,7 @@ stack assumptions.
 4. Choose where PRDs, ADRs, requirements, tasks, and reviews live.
 5. Confirm whether subagents are available for `review-turn`.
 6. Remove playbooks that do not apply.
-7. Add stack-specific checks behind `just test` only after the project chooses
+7. Add stack-specific checks behind `just turn-test` only after the project chooses
    them.
 
 ## Output
@@ -42,4 +42,4 @@ stack assumptions.
 
 ## Verification
 
-- Run `just test`.
+- Run `just turn-test`.

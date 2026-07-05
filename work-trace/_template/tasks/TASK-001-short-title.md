@@ -11,7 +11,7 @@
 
 ## Verification
 
-- `just test`
+- `just turn-test`
 
 ## Status
 

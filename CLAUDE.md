@@ -11,5 +11,6 @@ After `AGENTS.md`, load context progressively:
 4. Load the smallest matching playbook, or
    `playbooks/repository/no-matching-playbook.md` when none matches.
 
-Use `just test` for repository verification. Do not infer a language, package
-manager, build system, or deployment stack from this template.
+Use `just turn-test` before commits and `just pr-test` before PR handoff. Do
+not infer a language, package manager, build system, or deployment stack from
+this template.
