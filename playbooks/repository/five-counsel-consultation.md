@@ -42,7 +42,9 @@ Chairman. If subagents are unavailable, stop the loop and follow
 3. Ask each role to return:
    - questions for the user
    - user transformations
-   - every plausible one-action user story from its lens
+   - a thorough inventory of every plausible one-action user story from its
+     lens, including happy paths and unhappy paths
+   - screen, entry, success, failure, and not-allowed details for each story
    - Fibonacci estimate for each story, capped at 5
    - risks or opportunities from its lens
    - one recommended next action
@@ -54,7 +56,9 @@ Chairman. If subagents are unavailable, stop the loop and follow
    - questions that must be answered by the user
    - assumptions that can be used only if the user allowed gap filling
    - user transformations
-   - every plausible one-action user story found by the counsel
+   - a thorough, deduplicated inventory of one-action user stories found by the
+     counsel
+   - happy-path and unhappy-path coverage by screen, route, state, or workflow
    - story split recommendations for any story larger than 5 points
    - one concrete verdict
    - one actionable next step
@@ -73,7 +77,9 @@ reversible.
 
 - counsel questions
 - user transformations
-- every plausible one-action user story
+- thorough inventory of every plausible one-action user story
+- screen, entry, success, failure, and not-allowed details
+- happy-path and unhappy-path coverage notes
 - Fibonacci estimate for each story
 - split recommendations for stories larger than 5 points
 - assumptions, if any
@@ -93,3 +99,6 @@ Avoid:
 - producing user stories that are not tied to a user transformation
 - accepting stories with multiple actions
 - accepting stories larger than 5 points
+- stopping at a small sample of stories when the product area has many states,
+  screens, or unhappy paths
+- omitting what the user cannot do

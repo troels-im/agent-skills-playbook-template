@@ -22,15 +22,19 @@ Pre-execute:
 5. [ ] Pause for the user to answer counsel questions. If the user explicitly
    asked not to be disturbed or to fill gaps, run a second counsel to fill the
    gaps and record assumptions.
-6. [ ] Slice stories with `playbooks/planning/user-story-slicing.md`; every
-   story must cover one action and be no larger than 5 points.
+6. [ ] Build a thorough story inventory with
+   `playbooks/planning/user-story-slicing.md`; every story must cover one
+   action, be no larger than 5 points, and include happy-path and unhappy-path
+   details.
 7. [ ] Persist all product user transformations and sliced user stories in the
    trace.
 8. [ ] Review the user stories with
-   `playbooks/repository/red-blue-judge-review.md`; fix missing pieces before
-   PRD creation.
+   `playbooks/repository/red-blue-judge-review.md`; fix missing stories,
+   missing unhappy paths, broad stories, and unclear screen details before PRD
+   creation.
 9. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
-   user story must become or map to acceptance criteria.
+   user story must become or map to acceptance criteria, and actions without
+   stories are out of scope.
 10. [ ] Define the domain, subdomain, verticals, and code organization strategy
    with `playbooks/engineering/code-organization.md`.
 11. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
@@ -58,9 +62,11 @@ QA:
    code review evidence, and `playbooks/repository/red-blue-judge-review.md`
    with subagents.
 2. [ ] For each user story, check whether it was implemented as described.
-3. [ ] If any story is missing or incorrectly implemented, send the work back
-   to implementation with a concrete description of what must be done.
-4. [ ] Repeat implementation and QA until all user stories pass or the user
+3. [ ] Check that no unstoried action is exposed.
+4. [ ] If any story is missing, incorrectly implemented, or contradicted by an
+   unstoried exposed action, send the work back to implementation with a
+   concrete description of what must be done.
+5. [ ] Repeat implementation and QA until all user stories pass or the user
    explicitly defers them.
 
 Finish:

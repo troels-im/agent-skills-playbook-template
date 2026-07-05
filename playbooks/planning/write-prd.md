@@ -39,6 +39,9 @@ tasks, reviews, and implementation commits.
 
 Every persisted user story must follow `user-story-slicing.md`: one user
 action, Fibonacci estimate of 1, 2, 3, or 5, and no story larger than 5 points.
+Each story must include screen, entry, success, failure, and not-allowed
+details where relevant. The PRD must make clear that actions without user
+stories are out of scope.
 Every persisted user story must map to at least one acceptance criterion.
 
 ## Verification
@@ -48,4 +51,7 @@ Every persisted user story must map to at least one acceptance criterion.
 - Persisted user stories are mapped to acceptance criteria.
 - Persisted user stories each describe one action and are no larger than 5
   points.
+- Persisted user stories cover happy and unhappy paths for touched screens,
+  routes, states, and workflows.
+- The PRD makes clear what users can and cannot do.
 - `just turn-test` passes when repository files change.

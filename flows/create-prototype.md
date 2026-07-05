@@ -40,13 +40,15 @@ Pre-execute:
 4. [ ] Pause for the user to answer counsel questions. If the user explicitly
    asked not to be disturbed or to fill gaps, run a second counsel to fill the
    gaps and record assumptions.
-5. [ ] Slice stories with `playbooks/planning/user-story-slicing.md`; every
-   story must cover one action and be no larger than 5 points.
+5. [ ] Build a thorough story inventory with
+   `playbooks/planning/user-story-slicing.md`; every story must cover one
+   action, be no larger than 5 points, and include happy-path and unhappy-path
+   details.
 6. [ ] Persist only the five most important sliced prototype user stories and
    their user transformations in the trace.
 7. [ ] Review those five stories with
-   `playbooks/repository/red-blue-judge-review.md`; fix missing pieces before
-   PRD or spec creation.
+   `playbooks/repository/red-blue-judge-review.md`; fix missing unhappy paths,
+   broad stories, and unclear screen details before PRD or spec creation.
 8. [ ] Create a prototype PRD or spec with `playbooks/planning/write-prd.md`
    or `playbooks/planning/spec.md`; every persisted user story must become or
    map to acceptance criteria.
@@ -64,12 +66,14 @@ Pre-execute:
 16. [ ] QA whether the five persisted user stories were delivered as described
    using trace, code review evidence, and
    `playbooks/repository/red-blue-judge-review.md` with subagents.
-17. [ ] If any story is missing or wrong, send the work back to implementation
-   with a concrete description of what must be done.
-18. [ ] Record learnings, shortcuts, and production gaps in the trace.
-19. [ ] Run `just pr-test` when repository files changed.
-20. [ ] Fix failing PR tests and rerun until passing or blocked.
-21. [ ] Decide whether to discard, iterate later, or convert to product work.
+17. [ ] Check that no unstoried action is exposed in the prototype.
+18. [ ] If any story is missing, wrong, or contradicted by an unstoried exposed
+   action, send the work back to implementation with a concrete description of
+   what must be done.
+19. [ ] Record learnings, shortcuts, and production gaps in the trace.
+20. [ ] Run `just pr-test` when repository files changed.
+21. [ ] Fix failing PR tests and rerun until passing or blocked.
+22. [ ] Decide whether to discard, iterate later, or convert to product work.
 
 If converting to product work:
 
