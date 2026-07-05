@@ -2,6 +2,9 @@
 
 A progressive docs-as-code template for AI coding agents.
 
+This is a template by [troels.im](https://troels.im) for
+[Compound Coders](https://compoundcoders.com).
+
 This repository shows how to combine `AGENTS.md`, `CLAUDE.md`, small context
 indexes, repository playbooks, work traces, and policy checks so coding agents
 can discover the right workflow without loading a pile of irrelevant context.
