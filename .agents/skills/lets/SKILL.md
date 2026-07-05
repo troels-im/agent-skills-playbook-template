@@ -25,6 +25,15 @@ Use this skill as the low-token command surface for repository flows.
 10. At the final step of a flow, run `just pr-test`, fix failing PR tests, and
     repeat until the PR tests pass or a real blocker is recorded.
 
+## Prescribed Subagents
+
+When a selected flow or playbook prescribes subagents, run it with subagents.
+If the host cannot run the prescribed subagent workflow, stop the loop
+immediately and follow
+`playbooks/repository/prescribed-subagent-failure.md`. Do not replace a
+prescribed subagent workflow with a sequential self-review unless the user
+explicitly approves that degraded fallback after the retrospective is queued.
+
 ## User Input Gates
 
 When a flow step needs user input, approval, a product decision, or feedback to

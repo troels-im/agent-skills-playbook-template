@@ -40,34 +40,36 @@ Pre-execute:
 4. [ ] Pause for the user to answer counsel questions. If the user explicitly
    asked not to be disturbed or to fill gaps, run a second counsel to fill the
    gaps and record assumptions.
-5. [ ] Persist only the five most important prototype user stories and their
-   user transformations in the trace.
-6. [ ] Review those five stories with
+5. [ ] Slice stories with `playbooks/planning/user-story-slicing.md`; every
+   story must cover one action and be no larger than 5 points.
+6. [ ] Persist only the five most important sliced prototype user stories and
+   their user transformations in the trace.
+7. [ ] Review those five stories with
    `playbooks/repository/red-blue-judge-review.md`; fix missing pieces before
    PRD or spec creation.
-7. [ ] Create a prototype PRD or spec with `playbooks/planning/write-prd.md`
+8. [ ] Create a prototype PRD or spec with `playbooks/planning/write-prd.md`
    or `playbooks/planning/spec.md`; every persisted user story must become or
    map to acceptance criteria.
-8. [ ] State the question the prototype must answer.
-9. [ ] Pick the smallest viable prototype type.
-10. [ ] For UI/product prototypes, use Vite, TypeScript, React, and shadcn/ui
+9. [ ] State the question the prototype must answer.
+10. [ ] Pick the smallest viable prototype type.
+11. [ ] For UI/product prototypes, use Vite, TypeScript, React, and shadcn/ui
    unless the user chooses a different stack.
-11. [ ] Build the prototype with `playbooks/engineering/prototype.md`.
-12. [ ] When a requirement is implemented, run
+12. [ ] Build the prototype with `playbooks/engineering/prototype.md`.
+13. [ ] When a requirement is implemented, run
    `playbooks/repository/red-blue-judge-review.md` against the implementation,
    linked user story, and acceptance criteria.
-13. [ ] Ask the user to test the prototype.
-14. [ ] Revise from feedback until the prototype answers the question or the
+14. [ ] Ask the user to test the prototype.
+15. [ ] Revise from feedback until the prototype answers the question or the
    user stops the loop.
-15. [ ] QA whether the five persisted user stories were delivered as described
+16. [ ] QA whether the five persisted user stories were delivered as described
    using trace, code review evidence, and
    `playbooks/repository/red-blue-judge-review.md` with subagents.
-16. [ ] If any story is missing or wrong, send the work back to implementation
+17. [ ] If any story is missing or wrong, send the work back to implementation
    with a concrete description of what must be done.
-17. [ ] Record learnings, shortcuts, and production gaps in the trace.
-18. [ ] Run `just pr-test` when repository files changed.
-19. [ ] Fix failing PR tests and rerun until passing or blocked.
-20. [ ] Decide whether to discard, iterate later, or convert to product work.
+18. [ ] Record learnings, shortcuts, and production gaps in the trace.
+19. [ ] Run `just pr-test` when repository files changed.
+20. [ ] Fix failing PR tests and rerun until passing or blocked.
+21. [ ] Decide whether to discard, iterate later, or convert to product work.
 
 If converting to product work:
 

@@ -36,6 +36,8 @@ XX% / YY% / ZZ%: message
 3. [ ] Classify risk with `playbooks/repository/task-risk-classification.md`.
 4. [ ] Create or reuse a trace if the work is durable.
 5. [ ] Record the selected flow and playbooks.
+6. [ ] If a prescribed subagent step cannot run, stop immediately and use
+   `playbooks/repository/prescribed-subagent-failure.md`.
 
 ## Execute
 

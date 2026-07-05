@@ -26,6 +26,8 @@ retrospectives, policies, and reusable workflow capture.
 - `playbook-specification.md`: Define playbook metadata, indexing,
   progressive loading, and lifecycle rules.
 - `post-task-playbook-retrospective.md`: Feed task lessons back into playbooks.
+- `prescribed-subagent-failure.md`: Stop a flow when a required subagent
+  workflow cannot run and queue a retrospective.
 - `repository-policy-change.md`: Add or change repository policy checks.
 - `red-blue-judge-review.md`: Run a general subagent red-team, blue-team,
   judge review for artifacts, plans, stories, specs, PRDs, code, or QA results.

@@ -53,6 +53,8 @@ Start at `planning/index.md`.
 - `planning/split-into-tickets.md`: Split a PRD, spec, or plan into externally
   tracked tickets.
 - `planning/spec.md`: Turn vague intent into an executable, testable spec.
+- `planning/user-story-slicing.md`: Keep user stories to one user action and
+  at most five Fibonacci story points.
 - `planning/write-adr.md`: Create a checked-in architecture decision record
   linked to requirements and tasks.
 - `planning/write-prd.md`: Create a checked-in product requirements document
@@ -90,6 +92,8 @@ Start at `repository/index.md`.
   progressive loading, and lifecycle rules.
 - `repository/post-task-playbook-retrospective.md`: Feed task lessons back into
   the playbook system.
+- `repository/prescribed-subagent-failure.md`: Stop a flow when a required
+  subagent workflow cannot run and queue a retrospective.
 - `repository/repository-policy-change.md`: Add or change repository policies.
 - `repository/red-blue-judge-review.md`: Run a general subagent red-team,
   blue-team, judge review for artifacts, plans, stories, specs, PRDs, code, or

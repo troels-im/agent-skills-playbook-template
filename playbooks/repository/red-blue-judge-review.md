@@ -19,8 +19,8 @@ The default mechanism is three independent subagents:
 2. Blue team defends or concedes with evidence.
 3. Judge decides which findings are valid and what must happen next.
 
-If subagents are unavailable, record that limitation and run the three passes
-sequentially.
+If subagents are unavailable, stop the loop and follow
+`prescribed-subagent-failure.md`.
 
 ## Inputs
 
@@ -29,12 +29,15 @@ sequentially.
 - acceptance criteria, user stories, requirements, or rubric
 - relevant trace artifacts
 - verification already run
+- user-story sizing rules from `playbooks/planning/user-story-slicing.md` when
+  reviewing stories, PRDs, or story coverage
 
 ## Workflow
 
 1. Build a review packet with the artifact, objective, rubric, and evidence.
 2. Spawn red team. Ask it to find missing pieces, contradictions, risks,
-   unimplemented expectations, and user-story gaps.
+   unimplemented expectations, user-story gaps, stories with multiple actions,
+   and stories larger than 5 points.
 3. Spawn blue team. Give it the packet and red findings. Ask it to defend each
    finding with evidence or concede clearly.
 4. Spawn judge. Give it the packet, red findings, and blue responses. Ask it
@@ -69,3 +72,4 @@ Avoid:
 - letting blue team hand-wave instead of citing evidence
 - treating judge output as final without parent-agent verification
 - burying P1/P2 findings under polish
+- accepting broad user stories as reviewable units

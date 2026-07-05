@@ -22,17 +22,20 @@ Pre-execute:
 5. [ ] Pause for the user to answer counsel questions. If the user explicitly
    asked not to be disturbed or to fill gaps, run a second counsel to fill the
    gaps and record assumptions.
-6. [ ] Persist all product user transformations and user stories in the trace.
-7. [ ] Review the user stories with
+6. [ ] Slice stories with `playbooks/planning/user-story-slicing.md`; every
+   story must cover one action and be no larger than 5 points.
+7. [ ] Persist all product user transformations and sliced user stories in the
+   trace.
+8. [ ] Review the user stories with
    `playbooks/repository/red-blue-judge-review.md`; fix missing pieces before
    PRD creation.
-8. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
+9. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
    user story must become or map to acceptance criteria.
-9. [ ] Define the domain, subdomain, verticals, and code organization strategy
+10. [ ] Define the domain, subdomain, verticals, and code organization strategy
    with `playbooks/engineering/code-organization.md`.
-10. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
+11. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
    durable explanation.
-11. [ ] Create issues with `playbooks/planning/split-into-tickets.md`.
+12. [ ] Create issues with `playbooks/planning/split-into-tickets.md`.
 
 For every issue:
 

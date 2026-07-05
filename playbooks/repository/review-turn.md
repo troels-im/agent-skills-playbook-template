@@ -18,8 +18,8 @@ The default review mechanism is three independent subagents:
 2. Blue team defends or concedes each attack with evidence.
 3. Judge decides which findings are valid and how severe they are.
 
-If the host environment cannot run subagents, record that limitation and use
-the single-agent fallback. Do not silently collapse the workflow.
+If the host environment cannot run subagents, stop the loop and follow
+`prescribed-subagent-failure.md`. Do not silently collapse the workflow.
 
 ## Gate
 
@@ -101,19 +101,6 @@ Ask the judge to return:
 - required fix or explicit reason no fix is required
 - whether re-review is needed after fixes
 
-## Single-Agent Fallback
-
-Use this only when subagents are unavailable.
-
-1. Record: "Subagents unavailable; using single-agent fallback."
-2. Do the red-team pass first and write attacks down.
-3. Do the blue-team pass second and answer every attack with evidence or
-   concession.
-4. Do the judge pass last and emit only valid findings.
-
-Keep the passes separated in working notes so the fallback still preserves the
-review discipline.
-
 ## Output
 
 For each finding include:
@@ -137,7 +124,7 @@ Also include:
 Avoid:
 
 - reviewing without acceptance criteria
-- silently skipping subagents when they are available
+- silently skipping prescribed subagents or replacing them with self-review
 - letting one subagent see another subagent's conclusions before its own role
   requires them
 - listing style opinions before correctness risks

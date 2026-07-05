@@ -12,9 +12,9 @@ last_updated: 2026-07-05
 Use this playbook when a product, prototype, strategy, or design prompt needs
 divergent thinking before committing to a PRD, spec, issue split, or decision.
 
-The default mechanism is five independent subagents plus a synthesizing
-Chairman. If subagents are unavailable, record that limitation and run the same
-passes sequentially.
+The required mechanism is five independent subagents plus a synthesizing
+Chairman. If subagents are unavailable, stop the loop and follow
+`prescribed-subagent-failure.md`.
 
 ## Inputs
 
@@ -23,6 +23,7 @@ passes sequentially.
   decisions.
 - The decision the counsel must support.
 - Whether the user allowed the agent to fill gaps without asking.
+- User-story sizing rules from `playbooks/planning/user-story-slicing.md`.
 
 ## Counsel Roles
 
@@ -41,7 +42,8 @@ passes sequentially.
 3. Ask each role to return:
    - questions for the user
    - user transformations
-   - every plausible user story from its lens
+   - every plausible one-action user story from its lens
+   - Fibonacci estimate for each story, capped at 5
    - risks or opportunities from its lens
    - one recommended next action
 4. Peer review anonymously:
@@ -52,7 +54,8 @@ passes sequentially.
    - questions that must be answered by the user
    - assumptions that can be used only if the user allowed gap filling
    - user transformations
-   - every plausible user story found by the counsel
+   - every plausible one-action user story found by the counsel
+   - story split recommendations for any story larger than 5 points
    - one concrete verdict
    - one actionable next step
 
@@ -70,7 +73,9 @@ reversible.
 
 - counsel questions
 - user transformations
-- every plausible user story
+- every plausible one-action user story
+- Fibonacci estimate for each story
+- split recommendations for stories larger than 5 points
 - assumptions, if any
 - counsel verdict
 - next step
@@ -86,3 +91,5 @@ Avoid:
 - merging role outputs before peer review
 - letting the Chairman invent unsupported certainty
 - producing user stories that are not tied to a user transformation
+- accepting stories with multiple actions
+- accepting stories larger than 5 points

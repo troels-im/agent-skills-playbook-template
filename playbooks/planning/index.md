@@ -15,6 +15,8 @@ Use these playbooks to turn vague work into executable, testable plans.
 - `split-into-tickets.md`: Split a PRD, spec, or plan into externally tracked
   tickets.
 - `spec.md`: Turn vague intent into an executable, testable spec.
+- `user-story-slicing.md`: Keep user stories to one user action and at most
+  five Fibonacci story points.
 - `write-adr.md`: Create a checked-in architecture decision record linked to
   requirements and tasks.
 - `write-prd.md`: Create a checked-in product requirements document linked to

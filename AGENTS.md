@@ -37,8 +37,11 @@ workflow detail.
 - Do not run `playbooks/repository/review-turn.md` automatically. When the user
   explicitly asks for a review and clear acceptance criteria exist, run it as a
   three-subagent red team, blue team, and judge workflow whenever the host
-  supports subagents. If subagents are unavailable, record that fallback before
-  performing a single-agent review.
+  supports subagents. If a prescribed subagent flow cannot run as specified,
+  stop the loop and follow
+  `playbooks/repository/prescribed-subagent-failure.md`.
+- User stories must describe one user action. If a story is more than 5
+  Fibonacci story points, split it before PRD, acceptance criteria, or tickets.
 - Commit a checkpoint after a coherent slice when more than 500 lines have
   changed locally.
 - Keep files at or below 1500 lines.
