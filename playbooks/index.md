@@ -50,8 +50,8 @@ Start at `planning/index.md`.
 
 - `planning/interview-requirements.md`: Interview the user until the
   requirement tree is clear enough to plan.
-- `planning/split-into-tickets.md`: Split a PRD, spec, or plan into externally
-  tracked tickets.
+- `planning/split-into-tickets.md`: Split a PRD, spec, or plan into GitHub,
+  GitLab, Linear, or local repository tickets.
 - `planning/spec.md`: Turn vague intent into an executable, testable spec.
 - `planning/user-story-slicing.md`: Keep user stories to one user action and
   at most five Fibonacci story points.

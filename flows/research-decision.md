@@ -21,14 +21,17 @@ Pre-execute:
 
 If the decision creates implementation work:
 
-1. [ ] Write a spec with `playbooks/planning/spec.md`.
-2. [ ] Create issues with `playbooks/planning/split-into-tickets.md`.
-3. [ ] Execute each issue with `playbooks/repository/implementation-playbook.md`.
-4. [ ] Run focused checks and `just turn-test`.
-5. [ ] Run `just turn-test`.
-6. [ ] Commit with trace trailers.
-7. [ ] Run `just pr-test`.
-8. [ ] Fix failing PR tests and rerun until passing or blocked.
+1. [ ] Select tracker provider. If no GitHub, GitLab, or Linear tracker is
+   specified, use local tickets in `tickets/`.
+2. [ ] Write a spec with `playbooks/planning/spec.md`.
+3. [ ] Create tickets with `playbooks/planning/split-into-tickets.md`.
+4. [ ] Execute each ticket with
+   `playbooks/repository/implementation-playbook.md`.
+5. [ ] Run focused checks and `just turn-test`.
+6. [ ] Run `just turn-test`.
+7. [ ] Commit with trace trailers.
+8. [ ] Run `just pr-test`.
+9. [ ] Fix failing PR tests and rerun until passing or blocked.
 
 ## Progress
 

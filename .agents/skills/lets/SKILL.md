@@ -17,12 +17,14 @@ Use this skill as the low-token command surface for repository flows.
 6. Create or update the flow run checklist named by that flow.
    Use UTC timestamped slugs for generated run names:
    `run-YYYYMMDDTHHMMSSZ-short-slug.md`.
-7. Follow only the playbooks named by the flow and required by the current
+7. Select the tracker provider early. If the user did not specify GitHub,
+   GitLab, or Linear, use `local` and create tickets in `tickets/`.
+8. Follow only the playbooks named by the flow and required by the current
    step.
-8. Prefix progress updates with the format required by the flow:
+9. Prefix progress updates with the format required by the flow:
    `XX% / YY% / ZZ%: message`.
-9. Run `just turn-test` before every commit.
-10. At the final step of a flow, run `just pr-test`, fix failing PR tests, and
+10. Run `just turn-test` before every commit.
+11. At the final step of a flow, run `just pr-test`, fix failing PR tests, and
     repeat until the PR tests pass or a real blocker is recorded.
 
 ## Prescribed Subagents

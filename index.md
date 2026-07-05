@@ -18,9 +18,12 @@ This is the first AI-facing map for the repository.
   entrypoint for compatible agents.
 - `.agents/skills/lets/SKILL.md`: optional low-token entrypoint for `/lets`
   flow commands.
+- `tickets/README.md`: repository-local ticket tracker used when no external
+  tracker is configured.
 - `playbooks/index.md`: reusable task workflows and workflow governance.
 - `policies/index.md`: checks run by `just turn-test` and `just pr-test`.
-- `work-trace/README.md`: checked-in planning artifacts for issue-backed work.
+- `work-trace/README.md`: checked-in planning artifacts for ticket-backed
+  work.
 
 ## Core Contract
 

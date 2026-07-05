@@ -5,8 +5,19 @@ tracker:
   url: https://gitlab.com/example/example-repo/-/issues/456
   project: example/example-repo
   title: Document trace model
+tickets:
+  - id: gitlab-456
+    provider: gitlab
+    url: https://gitlab.com/example/example-repo/-/issues/456
+    title: Document trace model
+    requirements:
+      - REQ-001
+    acceptance:
+      - AC-001
 artifacts:
   prd: prd.md
+  tickets:
+    - https://gitlab.com/example/example-repo/-/issues/456
   requirements:
     - requirements/REQ-001-trace-docs.md
   acceptance:

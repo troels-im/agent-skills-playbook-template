@@ -14,41 +14,45 @@ Use for `/lets create-product {description}`.
 Pre-execute:
 
 1. [ ] Loop setup - create a run checklist from `flows/_template.md`.
-2. [ ] Interview the user with `playbooks/planning/interview-requirements.md`.
-3. [ ] Ask for prototypes, examples, screenshots, or prior decisions that
+2. [ ] Select tracker provider. If no GitHub, GitLab, or Linear tracker is
+   specified, use local tickets in `tickets/`.
+3. [ ] Interview the user with `playbooks/planning/interview-requirements.md`.
+4. [ ] Ask for prototypes, examples, screenshots, or prior decisions that
    should guide the work.
-4. [ ] Run `playbooks/repository/five-counsel-consultation.md` in assumption
+5. [ ] Run `playbooks/repository/five-counsel-consultation.md` in assumption
    discovery mode to identify questions, user transformations, scope risks,
    and assumptions. Do not create the story inventory yet.
-5. [ ] Write assumptions with `playbooks/planning/verify-assumptions.md`.
-6. [ ] Pause for the user to review the assumptions. Continue without asking
+6. [ ] Write assumptions with `playbooks/planning/verify-assumptions.md`.
+7. [ ] Pause for the user to review the assumptions. Continue without asking
    only when the user explicitly asked not to be disturbed, not to ask, to fill
    gaps, or to proceed with best judgment; record that instruction in the
    assumptions file.
-7. [ ] Run `playbooks/repository/five-counsel-consultation.md` using the
+8. [ ] Run `playbooks/repository/five-counsel-consultation.md` using the
    reviewed assumptions to identify candidate user stories.
-8. [ ] Build a thorough story inventory with
+9. [ ] Build a thorough story inventory with
    `playbooks/planning/user-story-slicing.md`; every story must cover one
    action, be no larger than 5 points, and include happy-path and unhappy-path
    details.
-9. [ ] Persist all product user transformations and sliced user stories in the
+10. [ ] Persist all product user transformations and sliced user stories in the
    trace.
-10. [ ] Review the user stories with
+11. [ ] Review the user stories with
    `playbooks/repository/red-blue-judge-review.md`; fix missing stories,
    missing unhappy paths, broad stories, and unclear screen details before PRD
    creation.
-11. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
+12. [ ] Create the PRD with `playbooks/planning/write-prd.md`; every persisted
    user story must become or map to acceptance criteria, and actions without
    stories are out of scope.
-12. [ ] Define the domain, subdomain, verticals, and code organization strategy
+13. [ ] Define the domain, subdomain, verticals, and code organization strategy
    with `playbooks/engineering/code-organization.md`.
-13. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
+14. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
    durable explanation.
-14. [ ] Create issues with `playbooks/planning/split-into-tickets.md`.
+15. [ ] Create tickets with `playbooks/planning/split-into-tickets.md`. Do not
+   start implementation until each accepted slice has an external or local
+   ticket.
 
-For every issue:
+For every ticket:
 
-1. [ ] Plan the issue with `playbooks/repository/plan-issue.md`.
+1. [ ] Plan the ticket with `playbooks/repository/plan-issue.md`.
 2. [ ] Address every task with `playbooks/repository/implementation-playbook.md`
    and `playbooks/engineering/test-drive-change.md` where useful.
 3. [ ] Run focused checks and `just turn-test`.

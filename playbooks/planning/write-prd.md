@@ -37,8 +37,8 @@ tasks, reviews, and implementation commits.
    - risks
    - rollout or verification notes
 6. Link the PRD from `trace.yaml`.
-7. Split execution work with `split-into-tickets` when the PRD is too large for
-   one ticket.
+7. Create tickets with `split-into-tickets` before implementation. A PRD that
+   fits in one slice still gets one ticket.
 
 Every persisted user story must follow `user-story-slicing.md`: one user
 action, Fibonacci estimate of 1, 2, 3, or 5, and no story larger than 5 points.

@@ -19,6 +19,7 @@
 - `trace-schema/`: work traces must include the required manifest sections.
 - `tracker-provider/`: trace manifests must use supported tracker providers.
 - `trace-links/`: trace manifest file references must resolve.
+- `ticket-trace/`: requirements must map to external or local tickets.
 - `commit-trailers/`: commits that complete tasks must include trace trailers.
 - `requirement-trace/`: requirements must map to code through trace commits.
 - `subagent-trace-review/`: PR traceability must receive semantic subagent

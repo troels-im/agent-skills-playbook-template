@@ -5,6 +5,7 @@ Every real trace under `work-trace/`, excluding `_template`, must have a
 
 - `trace_id`
 - `tracker`
+- `tickets`
 - `artifacts`
 - `requirements`
 - `acceptance`
@@ -15,3 +16,6 @@ Every real trace under `work-trace/`, excluding `_template`, must have a
 
 Use provider-prefixed trace directories such as `github-123`,
 `gitlab-456`, `linear-ENG-123`, or `local-short-slug`.
+
+If no external tracker is configured, set `tracker.provider: local` and link
+ticket files from `tickets/`.

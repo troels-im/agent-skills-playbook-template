@@ -23,6 +23,10 @@ workflow detail.
 - Use `just turn-test` before every commit.
 - Use `just pr-test` before PR handoff or final `/lets` flow completion.
 - `just test` is a compatibility alias for `just turn-test`.
+- Select the tracker provider before durable planning or implementation work:
+  `github`, `gitlab`, `linear`, or `local`. If the user has not specified
+  GitHub, GitLab, or Linear, default to `local` and create tickets in
+  `tickets/`. Do not skip ticket creation; local tickets are still tickets.
 - Do not assume a programming language, build system, package manager, test
   framework, cloud, database, or deployment platform.
 - For production code, prefer domain/subdomain/vertical organization where

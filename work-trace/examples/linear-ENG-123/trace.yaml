@@ -5,8 +5,19 @@ tracker:
   url: https://linear.app/example/issue/ENG-123/add-trace-fixtures
   project: ENG
   title: Add trace fixtures
+tickets:
+  - id: linear-ENG-123
+    provider: linear
+    url: https://linear.app/example/issue/ENG-123/add-trace-fixtures
+    title: Add trace fixtures
+    requirements:
+      - REQ-001
+    acceptance:
+      - AC-001
 artifacts:
   prd: prd.md
+  tickets:
+    - https://linear.app/example/issue/ENG-123/add-trace-fixtures
   requirements:
     - requirements/REQ-001-linear-example.md
   acceptance:

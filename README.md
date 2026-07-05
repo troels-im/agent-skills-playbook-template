@@ -17,9 +17,11 @@ can discover the right workflow without loading a pile of irrelevant context.
   development flows.
 - `flows/` loops for creating products, prototypes, bug fixes, research-backed
   decisions, documentation, and codebase improvements.
-- Playbooks for planning, reviews, retrospectives, traceable issue work,
+- Playbooks for planning, reviews, retrospectives, traceable ticket work,
   context save/restore, safety, documentation, and quality.
 - `work-trace/{issue-id}/` conventions for checked-in planning artifacts.
+- `tickets/` as the repository-local tracker when GitHub, GitLab, or Linear is
+  not configured.
 - Reviewed assumption files before user stories, PRDs, acceptance criteria, or
   tickets.
 - Language-neutral turn checks run through `just turn-test`.
@@ -44,9 +46,11 @@ This project is designed for people looking for:
 
 1. Copy this template into a repository.
 2. Edit `index.md` and `AGENTS.md` to describe the real project.
-3. Keep only the playbooks that apply.
-4. Preserve the `just turn-test` and `just pr-test` entrypoints.
-5. Add project-specific checks behind `just turn-test` or `just pr-test`
+3. Choose a tracker provider. If none is configured, keep `tickets/` as the
+   local tracker.
+4. Keep only the playbooks that apply.
+5. Preserve the `just turn-test` and `just pr-test` entrypoints.
+6. Add project-specific checks behind `just turn-test` or `just pr-test`
    without assuming they exist in the template itself.
 
 ## Verification

@@ -9,3 +9,6 @@ Trace manifests support these tracker providers:
 
 Each `trace.yaml` must include a provider, id, url, project, and title under
 `tracker:`.
+
+If the user has not specified GitHub, GitLab, or Linear, use `local` and create
+repository-local tickets in `tickets/`.

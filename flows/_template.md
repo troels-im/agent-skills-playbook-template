@@ -15,6 +15,7 @@ Copy this structure into a run checklist before executing a flow.
 - Run id:
 - Created UTC:
 - Trace:
+- Tracker provider:
 - User goal:
 - Current phase:
 - Current ticket:
@@ -34,9 +35,11 @@ XX% / YY% / ZZ%: message
 1. [ ] Loop setup - use this flow file.
 2. [ ] Read `AGENTS.md`, root `index.md`, and `flows/index.md`.
 3. [ ] Classify risk with `playbooks/repository/task-risk-classification.md`.
-4. [ ] Create or reuse a trace if the work is durable.
-5. [ ] Record the selected flow and playbooks.
-6. [ ] If a prescribed subagent step cannot run, stop immediately and use
+4. [ ] Select tracker provider. If no GitHub, GitLab, or Linear tracker is
+   specified, use local tickets in `tickets/`.
+5. [ ] Create or reuse a trace if the work is durable.
+6. [ ] Record the selected flow, tracker provider, and playbooks.
+7. [ ] If a prescribed subagent step cannot run, stop immediately and use
    `playbooks/repository/prescribed-subagent-failure.md`.
 
 ## Execute

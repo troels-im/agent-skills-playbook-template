@@ -24,6 +24,7 @@ run_turn_policies() {
   run_policy "trace schema" sh policies/trace-schema/check.sh
   run_policy "tracker provider" sh policies/tracker-provider/check.sh
   run_policy "trace links" sh policies/trace-links/check.sh
+  run_policy "ticket trace" sh policies/ticket-trace/check.sh
   run_policy "commit trailers" sh policies/commit-trailers/check.sh
 }
 

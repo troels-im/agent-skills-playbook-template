@@ -5,8 +5,19 @@ tracker:
   url: https://github.com/example/example-repo/issues/123
   project: example/example-repo
   title: Add trace policy checks
+tickets:
+  - id: github-123
+    provider: github
+    url: https://github.com/example/example-repo/issues/123
+    title: Add trace policy checks
+    requirements:
+      - REQ-001
+    acceptance:
+      - AC-001
 artifacts:
   prd: prd.md
+  tickets:
+    - https://github.com/example/example-repo/issues/123
   requirements:
     - requirements/REQ-001-trace-policy.md
   acceptance:

@@ -14,17 +14,19 @@ Use for `/lets improve-codebase {description}`.
 Pre-execute:
 
 1. [ ] Loop setup - create a run checklist from `flows/_template.md`.
-2. [ ] Run a scoped health pass with `playbooks/quality/health.md`.
-3. [ ] Analyze boundaries with `playbooks/engineering/design-codebase.md`.
-4. [ ] Choose one improvement goal with the user.
-5. [ ] Write a spec or ADR with `playbooks/planning/spec.md` or
+2. [ ] Select tracker provider. If no GitHub, GitLab, or Linear tracker is
+   specified, use local tickets in `tickets/`.
+3. [ ] Run a scoped health pass with `playbooks/quality/health.md`.
+4. [ ] Analyze boundaries with `playbooks/engineering/design-codebase.md`.
+5. [ ] Choose one improvement goal with the user.
+6. [ ] Write a spec or ADR with `playbooks/planning/spec.md` or
    `playbooks/planning/write-adr.md`.
-6. [ ] Split into issues with `playbooks/planning/split-into-tickets.md` when
-   the improvement is too large for one slice.
+7. [ ] Create tickets with `playbooks/planning/split-into-tickets.md`. A
+   one-slice improvement still gets one ticket.
 
-For every issue:
+For every ticket:
 
-1. [ ] Plan the issue with `playbooks/repository/plan-issue.md`.
+1. [ ] Plan the ticket with `playbooks/repository/plan-issue.md`.
 2. [ ] Implement the smallest design improvement.
 3. [ ] Run focused checks and `just turn-test`.
 4. [ ] Review when requested or required.

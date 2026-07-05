@@ -25,7 +25,7 @@ for trace_dir in work-trace/* work-trace/examples/*; do
 "
   fi
 
-  for key in trace_id tracker artifacts requirements acceptance tasks commits code_refs test_refs; do
+  for key in trace_id tracker tickets artifacts requirements acceptance tasks commits code_refs test_refs; do
     if ! grep -Eq "^${key}:" "$trace_file"; then
       violations="${violations}${trace_file}: missing top-level '${key}:' section
 "

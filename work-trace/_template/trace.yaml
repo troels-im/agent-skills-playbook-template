@@ -5,8 +5,19 @@ tracker:
   url: ""
   project: ""
   title: Short work title
+tickets:
+  - id: TICKET-20260705T000000Z-example
+    provider: local
+    file: ../../tickets/TICKET-20260705T000000Z-example.md
+    title: Short ticket title
+    requirements:
+      - REQ-001
+    acceptance:
+      - AC-001
 artifacts:
   prd: prd.md
+  tickets:
+    - ../../tickets/TICKET-20260705T000000Z-example.md
   requirements:
     - requirements/REQ-001-short-title.md
   acceptance:

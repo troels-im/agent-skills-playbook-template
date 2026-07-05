@@ -13,6 +13,8 @@ Trace ids are provider-prefixed by default:
 Expected layout:
 
 ```text
+ tickets/
+   TICKET-YYYYMMDDTHHMMSSZ-short-slug.md
 work-trace/{trace-id}/
   trace.yaml
   prd.md
@@ -33,6 +35,11 @@ work-trace/{trace-id}/
 Rules:
 
 - Keep `trace.yaml` as the roll-up ledger.
+- Pick a tracker provider before durable planning starts: GitHub, GitLab,
+  Linear, or local.
+- If no external tracker is configured, create local tickets in `tickets/`.
+- Do not create implementation tasks until the ticket exists and is linked
+  from `trace.yaml`.
 - Keep facts separate from assumptions.
 - Write assumptions to
   `assumptions/ASM-YYYYMMDDTHHMMSSZ-short-slug.md` and review them before

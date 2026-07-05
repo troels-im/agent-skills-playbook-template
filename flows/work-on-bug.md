@@ -14,11 +14,16 @@ Use for `/lets work-on-bug {description}`.
 Pre-execute:
 
 1. [ ] Loop setup - create a run checklist from `flows/_template.md`.
-2. [ ] Capture the bug report and expected behavior.
-3. [ ] Reproduce or narrow the failure with
+2. [ ] Select tracker provider. If no GitHub, GitLab, or Linear tracker is
+   specified, use local tickets in `tickets/`.
+3. [ ] Capture the bug report and expected behavior.
+4. [ ] Reproduce or narrow the failure with
    `playbooks/engineering/debug-bug.md`.
-4. [ ] Create or update a trace if the bug fix is non-trivial.
-5. [ ] Plan the issue with `playbooks/repository/plan-issue.md` when needed.
+5. [ ] Create or update a trace if the bug fix is non-trivial.
+6. [ ] Create or update a ticket with
+   `playbooks/planning/split-into-tickets.md` before implementation. If the
+   bug arrived without an external ticket, create a local ticket in `tickets/`.
+7. [ ] Plan the ticket with `playbooks/repository/plan-issue.md`.
 
 For the fix:
 
