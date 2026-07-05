@@ -1,13 +1,28 @@
 # Agent Skills Playbook Template
 
-A progressive docs-as-code template for AI coding agents.
+A progressive docs-as-code template for AI coding agents: `AGENTS.md`,
+playbooks, trace files, and policy checks that make agent work reviewable.
 
-This is a template by [troels.im](https://troels.im) for
-[Compound Coders](https://compoundcoders.com).
+Use this when you want AI-assisted development to behave like an engineering
+workflow instead of a pile of prompts. It gives agents a small operating
+contract, routing indexes, reusable playbooks, and deterministic checks through
+`just turn-test`.
+
+[Use this template](https://github.com/new?template_name=agent-skills-playbook-template&template_owner=troels-im)
 
 This repository shows how to combine `AGENTS.md`, `CLAUDE.md`, small context
 indexes, repository playbooks, work traces, and policy checks so coding agents
 can discover the right workflow without loading a pile of irrelevant context.
+
+## Five-Command Quick Start
+
+```sh
+gh repo create OWNER/REPO --template troels-im/agent-skills-playbook-template --public --clone
+cd REPO
+$EDITOR index.md AGENTS.md
+just turn-test
+git commit -am "Adapt agent playbook template"
+```
 
 ## What This Template Gives You
 
@@ -46,7 +61,7 @@ This project is designed for people looking for:
 - AI development workflow template
 - agentic development flows
 
-## Quick Start
+## Setup Notes
 
 1. Copy this template into a repository.
 2. Edit `index.md` and `AGENTS.md` to describe the real project.
@@ -69,3 +84,11 @@ just pr-test
 The template assumes `just` is available. It does not assume any other language,
 runtime, build system, or package manager. `just test` remains as a
 compatibility alias for `just turn-test`.
+
+## License
+
+Licensed under MIT. See `LICENSE`.
+
+---
+
+More on the workflow: [start.troels.im?utm_source=gh](https://start.troels.im?utm_source=gh)
