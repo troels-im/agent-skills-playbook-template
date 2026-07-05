@@ -40,6 +40,10 @@ When a flow step needs user input, approval, a product decision, or feedback to
 continue correctly, pause the loop and ask. Do not infer missing decisions or
 continue on guessed requirements.
 
+Before starting user-story inventory, specs, PRDs, acceptance criteria, or
+tickets, write assumptions to an active trace file using
+`playbooks/planning/verify-assumptions.md` and pause for user review.
+
 Continue without asking only when the user explicitly says not to disturb them,
 not to ask, to proceed with best judgment, or gives an equivalent instruction.
 When doing so, record the assumption in the run checklist and keep it reversible

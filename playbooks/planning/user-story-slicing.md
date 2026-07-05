@@ -19,6 +19,11 @@ Each user story must cover exactly one user action.
 If a story is larger than 5 Fibonacci story points, it is too broad and must be
 split before PRD, acceptance criteria, or ticket creation.
 
+Before starting the story inventory, verify assumptions with
+`playbooks/planning/verify-assumptions.md`. Pause for user review unless the
+user explicitly said not to ask, not to disturb, to fill gaps, or to proceed
+with best judgment.
+
 Story generation must be thorough. For a full product area, enumerate every
 meaningful user action, including happy paths, unhappy paths, empty states,
 permission states, validation failures, recovery paths, and protected-route

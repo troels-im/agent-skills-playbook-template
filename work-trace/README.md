@@ -20,6 +20,7 @@ work-trace/{trace-id}/
   progress.md
   requirements/
   acceptance/
+  assumptions/
   tasks/
   adrs/
   prototypes/
@@ -33,6 +34,9 @@ Rules:
 
 - Keep `trace.yaml` as the roll-up ledger.
 - Keep facts separate from assumptions.
+- Write assumptions to
+  `assumptions/ASM-YYYYMMDDTHHMMSSZ-short-slug.md` and review them before
+  creating user stories, specs, PRDs, acceptance criteria, or tickets.
 - Keep trace files concise enough for review.
 - Do not store secrets or raw private data.
 - Create or update the trace before implementation work begins.

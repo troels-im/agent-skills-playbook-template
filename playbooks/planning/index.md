@@ -17,6 +17,8 @@ Use these playbooks to turn vague work into executable, testable plans.
 - `spec.md`: Turn vague intent into an executable, testable spec.
 - `user-story-slicing.md`: Keep user stories to one user action and at most
   five Fibonacci story points.
+- `verify-assumptions.md`: Write assumptions to a trace file and review them
+  with the user before story, PRD, spec, acceptance, or ticket work.
 - `write-adr.md`: Create a checked-in architecture decision record linked to
   requirements and tasks.
 - `write-prd.md`: Create a checked-in product requirements document linked to

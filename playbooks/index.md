@@ -55,6 +55,9 @@ Start at `planning/index.md`.
 - `planning/spec.md`: Turn vague intent into an executable, testable spec.
 - `planning/user-story-slicing.md`: Keep user stories to one user action and
   at most five Fibonacci story points.
+- `planning/verify-assumptions.md`: Write assumptions to a trace file and
+  review them with the user before story, PRD, spec, acceptance, or ticket
+  work.
 - `planning/write-adr.md`: Create a checked-in architecture decision record
   linked to requirements and tasks.
 - `planning/write-prd.md`: Create a checked-in product requirements document

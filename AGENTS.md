@@ -40,6 +40,11 @@ workflow detail.
   supports subagents. If a prescribed subagent flow cannot run as specified,
   stop the loop and follow
   `playbooks/repository/prescribed-subagent-failure.md`.
+- Before user stories, specs, PRDs, acceptance criteria, or tickets are created,
+  write assumptions to a trace file with
+  `playbooks/planning/verify-assumptions.md` and pause for user review unless
+  the user explicitly said not to ask, not to disturb, to fill gaps, or to
+  proceed with best judgment.
 - User stories must describe one user action. If a story is more than 5
   Fibonacci story points, split it before PRD, acceptance criteria, or tickets.
 - Commit a checkpoint after a coherent slice when more than 500 lines have

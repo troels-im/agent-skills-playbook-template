@@ -20,6 +20,8 @@ can discover the right workflow without loading a pile of irrelevant context.
 - Playbooks for planning, reviews, retrospectives, traceable issue work,
   context save/restore, safety, documentation, and quality.
 - `work-trace/{issue-id}/` conventions for checked-in planning artifacts.
+- Reviewed assumption files before user stories, PRDs, acceptance criteria, or
+  tickets.
 - Language-neutral turn checks run through `just turn-test`.
 - PR traceability checks run through `just pr-test`.
 

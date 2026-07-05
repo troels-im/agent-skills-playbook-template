@@ -22,6 +22,7 @@ Chairman. If subagents are unavailable, stop the loop and follow
 - Relevant prototype screenshots, feedback, docs, tickets, traces, or prior
   decisions.
 - The decision the counsel must support.
+- Mode: assumption discovery or story consultation.
 - Whether the user allowed the agent to fill gaps without asking.
 - User-story sizing rules from `playbooks/planning/user-story-slicing.md`.
 
@@ -41,11 +42,17 @@ Chairman. If subagents are unavailable, stop the loop and follow
    role's output before peer review.
 3. Ask each role to return:
    - questions for the user
+   - assumptions it believes must be verified before story or PRD work
    - user transformations
-   - a thorough inventory of every plausible one-action user story from its
-     lens, including happy paths and unhappy paths
-   - screen, entry, success, failure, and not-allowed details for each story
-   - Fibonacci estimate for each story, capped at 5
+   - if in assumption discovery mode, story areas and behavior surfaces that
+     must be explored after assumptions are reviewed
+   - if in story consultation mode, a thorough inventory of every plausible
+     one-action user story from its lens, including happy paths and unhappy
+     paths
+   - if in story consultation mode, screen, entry, success, failure, and
+     not-allowed details for each story
+   - if in story consultation mode, Fibonacci estimate for each story, capped
+     at 5
    - risks or opportunities from its lens
    - one recommended next action
 4. Peer review anonymously:
@@ -54,19 +61,26 @@ Chairman. If subagents are unavailable, stop the loop and follow
 5. Spawn or run the Chairman synthesis.
 6. Chairman returns:
    - questions that must be answered by the user
-   - assumptions that can be used only if the user allowed gap filling
+   - assumptions that must be written to an assumptions file before user-story,
+     PRD, spec, acceptance criteria, or ticket work starts
    - user transformations
-   - a thorough, deduplicated inventory of one-action user stories found by the
-     counsel
-   - happy-path and unhappy-path coverage by screen, route, state, or workflow
-   - story split recommendations for any story larger than 5 points
+   - if in assumption discovery mode, story areas and behavior surfaces to
+     cover after assumption review
+   - if in story consultation mode, a thorough, deduplicated inventory of
+     one-action user stories found by the counsel
+   - if in story consultation mode, happy-path and unhappy-path coverage by
+     screen, route, state, or workflow
+   - if in story consultation mode, story split recommendations for any story
+     larger than 5 points
    - one concrete verdict
    - one actionable next step
 
 ## User Input Gate
 
 If the Chairman has questions that affect product direction, user stories,
-scope, or acceptance criteria, pause and ask the user.
+scope, or acceptance criteria, write the assumptions with
+`playbooks/planning/verify-assumptions.md` and pause for user review before
+story or PRD work starts.
 
 Continue without asking only when the user explicitly said not to ask, not to
 disturb, to fill gaps, or to use best judgment. In that case, run a second
@@ -77,12 +91,16 @@ reversible.
 
 - counsel questions
 - user transformations
-- thorough inventory of every plausible one-action user story
-- screen, entry, success, failure, and not-allowed details
-- happy-path and unhappy-path coverage notes
-- Fibonacci estimate for each story
-- split recommendations for stories larger than 5 points
-- assumptions, if any
+- assumptions to verify
+- story areas and behavior surfaces, when in assumption discovery mode
+- thorough inventory of every plausible one-action user story, when in story
+  consultation mode
+- screen, entry, success, failure, and not-allowed details, when in story
+  consultation mode
+- happy-path and unhappy-path coverage notes, when in story consultation mode
+- Fibonacci estimate for each story, when in story consultation mode
+- split recommendations for stories larger than 5 points, when in story
+  consultation mode
 - counsel verdict
 - next step
 
@@ -94,6 +112,7 @@ ticket, ADR, acceptance criterion, or implementation decision.
 Avoid:
 
 - using counsel to replace user input when the user did not permit assumptions
+- starting user-story or PRD work before assumptions are written and reviewed
 - merging role outputs before peer review
 - letting the Chairman invent unsupported certainty
 - producing user stories that are not tied to a user transformation

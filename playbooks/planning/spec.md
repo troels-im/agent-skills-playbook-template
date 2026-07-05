@@ -4,7 +4,7 @@ domain: planning
 summary: Turn vague intent into an executable, testable spec.
 created: 2026-07-04
 last_used: null
-last_updated: 2026-07-04
+last_updated: 2026-07-05
 ---
 
 # Spec Authoring Playbook
@@ -24,13 +24,17 @@ that an unfamiliar teammate or agent can execute it without guessing.
    - what problem exists now
    - why it matters
    - what outcome would be visibly better
-2. Scope boundaries:
+2. Verify assumptions with `playbooks/planning/verify-assumptions.md` before
+   drafting a spec that defines product behavior, scope, acceptance criteria,
+   or ticket boundaries. Pause for user review unless the user explicitly said
+   not to ask, not to disturb, to fill gaps, or to proceed with best judgment.
+3. Scope boundaries:
    - in scope
    - out of scope
    - touched systems or files
    - non-goals
-3. Read repository evidence before technical questions.
-4. Draft the spec with:
+4. Read repository evidence before technical questions.
+5. Draft the spec with:
    - verified current state
    - requirements
    - acceptance criteria
@@ -38,9 +42,9 @@ that an unfamiliar teammate or agent can execute it without guessing.
    - dependencies
    - risks
    - rollback or recovery where relevant
-5. Ask for user confirmation when the scope is materially ambiguous.
-6. Store trace artifacts under `work-trace/{issue-id}/` when issue-backed.
-7. Run the checks required by the task risk class.
+6. Ask for user confirmation when the scope is materially ambiguous.
+7. Store trace artifacts under `work-trace/{issue-id}/` when issue-backed.
+8. Run the checks required by the task risk class.
 
 ## Spec Quality Standards
 
