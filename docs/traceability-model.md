@@ -14,6 +14,8 @@ checked in, cross-linked, and verifiable through `just test`.
 - Task: stable `TASK-###` local implementation chunk.
 - ADR: checked-in architecture decision record.
 - Review: checked-in review record, commonly from `review-turn`.
+- Prototype: checked-in disposable artifact that answers a focused question
+  before production implementation.
 
 ## Directory Convention
 
@@ -37,6 +39,7 @@ work-trace/{trace-id}/
   acceptance/
   tasks/
   adrs/
+  prototypes/
   reviews/
   context/
   specs/
@@ -52,8 +55,19 @@ It records:
 - checked-in artifacts
 - requirements and acceptance criteria
 - local tasks
+- prototypes
 - reviews
 - commits
+
+Prototypes live under:
+
+```text
+work-trace/{trace-id}/prototypes/{prototype-slug}/
+```
+
+They are disposable, but not invisible: if a prototype informs a ticket,
+requirement, ADR, or task, it should be checked in and linked from
+`trace.yaml`.
 - code references
 - test references
 

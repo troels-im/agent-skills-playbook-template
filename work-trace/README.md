@@ -22,6 +22,7 @@ work-trace/{trace-id}/
   acceptance/
   tasks/
   adrs/
+  prototypes/
   reviews/
   context/
   specs/
@@ -34,5 +35,7 @@ Rules:
 - Keep trace files concise enough for review.
 - Do not store secrets or raw private data.
 - Create or update the trace before implementation work begins.
+- Put prototypes under `work-trace/{trace-id}/prototypes/{prototype-slug}/`
+  when they inform durable work.
 - Use `work-trace/_template/` for new traces.
 - Use `work-trace/examples/` to inspect provider-specific examples.

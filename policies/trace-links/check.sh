@@ -42,7 +42,7 @@ for trace_file in $(find work-trace -path '*/trace.yaml' | sort); do
   done
 
   awk '
-    /^  (prd|requirements|acceptance|tasks|adrs|reviews):/ { in_artifacts = 1; next }
+    /^  (prd|requirements|acceptance|tasks|adrs|prototypes|reviews):/ { in_artifacts = 1; next }
     /^  [a-zA-Z_]+:/ && $1 !~ /^-/ { in_artifacts = 0 }
     in_artifacts && /^    - / { sub(/^    - /, ""); print }
   ' "$trace_file" | tr -d '"' |

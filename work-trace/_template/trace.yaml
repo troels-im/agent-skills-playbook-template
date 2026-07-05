@@ -14,6 +14,8 @@ artifacts:
   tasks:
     - tasks/TASK-001-short-title.md
   adrs: []
+  prototypes:
+    - prototypes/example-prototype/README.md
   reviews: []
 requirements:
   - id: REQ-001
