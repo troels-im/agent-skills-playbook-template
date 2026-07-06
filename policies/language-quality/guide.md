@@ -17,6 +17,14 @@ Rules:
 - Add project-specific commands inside the relevant language file instead of
   hard-coding them into the root policy runner.
 
+Python support should prefer `ruff`, `black`, `isort`, `mypy`, `pyright`, and
+`pydocstyle` when those tools and their configs are present.
+
+TypeScript support lives in `languages/typescript.sh`. It should prefer
+package scripts such as `lint`, `typecheck`, `type-check`, `check:types`,
+`docs:check`, and `typedoc`, with local `tsc` or `typedoc` fallbacks when
+configured.
+
 This policy is intentionally portable: the template assumes `just`, but does
 not assume Node, Python, Rust, Go, Java, .NET, PHP, Ruby, or C/C++ tooling is
 installed.
