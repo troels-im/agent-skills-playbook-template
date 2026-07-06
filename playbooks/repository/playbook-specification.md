@@ -3,7 +3,7 @@ title: Playbook Specification
 domain: repository
 summary: Define playbook metadata, indexing, progressive loading, and lifecycle rules.
 created: 2026-07-04
-last_used: null
+last_used: 2026-07-06
 last_updated: 2026-07-04
 ---
 

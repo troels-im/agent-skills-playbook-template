@@ -99,6 +99,8 @@ Start at `repository/index.md`.
 - `repository/five-counsel-consultation.md`: Use five subagent lenses to
   generate questions, user transformations, user stories, and one concrete next
   step.
+- `repository/flow-authoring.md`: Create or update user-facing `/lets` flows
+  that orchestrate playbooks.
 - `repository/implementation-playbook.md`: Move from idea to prototype to
   production work without assuming a stack.
 - `repository/incident-retrospective.md`: Write evidence-based retrospectives.

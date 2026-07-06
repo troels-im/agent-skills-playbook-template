@@ -18,6 +18,8 @@ retrospectives, policies, and reusable workflow capture.
 - `evaluation-playbook.md`: Design evidence-rich product or workflow evals.
 - `five-counsel-consultation.md`: Use five subagent lenses to generate
   questions, user transformations, user stories, and one concrete next step.
+- `flow-authoring.md`: Create or update user-facing `/lets` flows that
+  orchestrate playbooks.
 - `implementation-playbook.md`: Move from idea to prototype to production work
   without assuming a stack.
 - `incident-retrospective.md`: Write evidence-based retrospectives.
