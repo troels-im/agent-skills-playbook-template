@@ -16,6 +16,8 @@
   be committed.
 - `secret-hygiene/`: obvious credentials and private keys should not be
   committed.
+- `language-quality/`: per-language linting, formatting, static-analysis, and
+  documentation checks that no-op when a language is absent.
 - `trace-schema/`: work traces must include the required manifest sections.
 - `tracker-provider/`: trace manifests must use supported tracker providers.
 - `trace-links/`: trace manifest file references must resolve.

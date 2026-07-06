@@ -44,6 +44,8 @@ git commit -am "Adapt agent playbook template"
 - Reviewed assumption files before user stories, PRDs, acceptance criteria, or
   tickets.
 - Language-neutral turn checks run through `just turn-test`.
+- Per-language linting and documentation policy hooks that pass when a
+  language is not used.
 - PR traceability checks run through `just pr-test`.
 
 ## Search Terms

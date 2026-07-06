@@ -32,6 +32,9 @@ workflow detail.
   `work-trace/{trace-id}/` exists, use `work-queue/`, not `/tmp`.
 - Do not assume a programming language, build system, package manager, test
   framework, cloud, database, or deployment platform.
+- Keep language-specific linting and documentation checks under
+  `policies/language-quality/languages/`; each language checker must pass when
+  that language is not used in the repository.
 - For production code, prefer domain/subdomain/vertical organization where
   practical, and use interfaces, traits, ports, repositories, services, views,
   or APIs only where they clarify stable seams.

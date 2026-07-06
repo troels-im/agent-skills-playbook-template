@@ -21,6 +21,7 @@ run_turn_policies() {
   run_policy "index coverage" sh policies/index-coverage/check.sh
   run_policy "generated artifacts" sh policies/generated-artifacts/check.sh
   run_policy "secret hygiene" sh policies/secret-hygiene/check.sh
+  run_policy "language quality" sh policies/language-quality/check.sh
   run_policy "trace schema" sh policies/trace-schema/check.sh
   run_policy "tracker provider" sh policies/tracker-provider/check.sh
   run_policy "trace links" sh policies/trace-links/check.sh
