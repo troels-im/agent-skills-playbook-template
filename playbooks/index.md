@@ -48,6 +48,8 @@ Start at `design/index.md`.
 
 Start at `knowledge/index.md`.
 
+- `knowledge/continue-work-discovery.md`: Delegate resume discovery before
+  continuing ticket, product, milestone, or trace work.
 - `knowledge/context-restore.md`: Restore saved work context before continuing.
 - `knowledge/context-save.md`: Save current work context for handoff or resume.
 - `knowledge/learn.md`: Capture reusable project lessons without bloating root

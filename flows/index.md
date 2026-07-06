@@ -22,6 +22,7 @@ Use `/lets` as the friendly command surface:
 /lets improve-codebase {description}
 /lets research-decision {question}
 /lets write-docs {description}
+/lets continue-work {ticket, trace, product, milestone, branch, or description}
 /lets continue {trace-id}
 /lets status {trace-id}
 ```
@@ -38,6 +39,8 @@ Use `/lets` as the friendly command surface:
   ADR, spec, or tickets.
 - `write-docs.md`: Generate durable documentation from verified repository
   context.
+- `continue-work.md`: Resume ticket, milestone, product, or trace work after a
+  subagent continuation-discovery report.
 
 ## Run Checklist
 

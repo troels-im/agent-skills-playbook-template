@@ -1,6 +1,6 @@
 ---
 name: lets
-description: Use when a user invokes /lets or asks to start, continue, or inspect a guided development flow such as create-product, create-prototype, work-on-bug, improve-codebase, research-decision, or write-docs in an agent-skills-playbook-template repository.
+description: Use when a user invokes /lets or asks to start, continue, or inspect a guided development flow such as create-product, create-prototype, continue-work, work-on-bug, improve-codebase, research-decision, or write-docs in an agent-skills-playbook-template repository.
 ---
 
 # Lets

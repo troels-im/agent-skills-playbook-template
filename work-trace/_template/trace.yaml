@@ -37,6 +37,9 @@ artifacts:
     - acceptance/AC-001-short-title.md
   assumptions:
     - assumptions/ASM-20260705T000000Z-example.md
+  context:
+    - context/CTX-001-source.md
+    - context/CONTINUE-20260706T000000Z-example.md
   user_flows:
     - user-flows/UF-001-short-title.md
   tasks:

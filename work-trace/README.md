@@ -67,6 +67,8 @@ Rules:
   epics, milestones, ADRs, reviews, prototypes, and tasks are created.
 - Put flow run checklists under
   `work-trace/{trace-id}/runs/run-YYYYMMDDTHHMMSSZ-short-slug.md`.
+- Put continuation discovery reports under
+  `work-trace/{trace-id}/context/CONTINUE-YYYYMMDDTHHMMSSZ-short-slug.md`.
 - Use UTC timestamped slugs for local ids that could collide.
 - Use `work-trace/_template/` for new traces.
 - Use `work-trace/examples/` to inspect provider-specific examples.

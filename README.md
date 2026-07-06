@@ -33,8 +33,8 @@ git commit -am "Adapt agent playbook template"
   that support Agent Skills.
 - A tiny `.agents/skills/lets/SKILL.md` discovery hook for long-running
   development flows.
-- `flows/` loops for creating products, prototypes, bug fixes, research-backed
-  decisions, documentation, and codebase improvements.
+- `flows/` loops for creating products, prototypes, continuing work, bug
+  fixes, research-backed decisions, documentation, and codebase improvements.
 - Playbooks for planning, reviews, retrospectives, traceable ticket work,
   context save/restore, safety, documentation, and quality.
 - `work-trace/{issue-id}/` conventions for checked-in planning artifacts.

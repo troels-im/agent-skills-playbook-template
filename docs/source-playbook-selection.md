@@ -21,7 +21,7 @@ The template keeps playbooks that are broadly useful across repositories:
 - implementation workflow
 - evaluations
 - incident retrospectives
-- context save and restore
+- context save, restore, and delegated continue-work discovery
 - spec authoring
 - QA and health checks
 - documentation generation
