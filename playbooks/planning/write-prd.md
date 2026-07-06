@@ -4,7 +4,7 @@ domain: planning
 summary: Create a checked-in product requirements document linked to trace artifacts.
 created: 2026-07-04
 last_used: null
-last_updated: 2026-07-05
+last_updated: 2026-07-06
 ---
 
 # Write PRD
@@ -40,7 +40,9 @@ tasks, reviews, and implementation commits.
 6. Create one requirement file per durable requirement under
    `work-trace/{trace-id}/requirements/REQ-###-short-title.md`.
 7. Link requirement files, user-flow files, and the PRD from `trace.yaml`.
-8. Create tickets with `split-into-tickets` before implementation. A PRD that
+8. For product work, create epics and milestones with
+   `plan-epics-milestones` before ticket execution.
+9. Create tickets with `split-into-tickets` before implementation. A PRD that
    fits in one slice still gets one ticket.
 
 Every persisted user story must follow `user-story-slicing.md`: one user
@@ -66,6 +68,7 @@ requirements, but each `REQ-*` must have a corresponding file in
   `trace.yaml`.
 - Multi-step product behavior has user-flow files linked from the PRD and
   trace.
+- Product work has reviewable epics and milestones before ticket execution.
 - Persisted user stories are mapped to acceptance criteria.
 - Persisted user stories each describe one action and are no larger than 5
   points.

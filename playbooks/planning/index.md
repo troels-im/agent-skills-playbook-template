@@ -12,6 +12,8 @@ Use these playbooks to turn vague work into executable, testable plans.
 
 - `interview-requirements.md`: Interview the user until the requirement tree is
   clear enough to plan.
+- `plan-epics-milestones.md`: Group product tickets into epics and
+  human-reviewable milestones.
 - `split-into-tickets.md`: Split a PRD, spec, or plan into GitHub, GitLab,
   Linear, or local repository tickets.
 - `spec.md`: Turn vague intent into an executable, testable spec.

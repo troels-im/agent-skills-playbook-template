@@ -12,9 +12,12 @@ Rules:
 - Create one markdown file per local ticket using
   `TICKET-YYYYMMDDTHHMMSSZ-short-slug.md`.
 - Link each local ticket to the relevant `work-trace/{trace-id}/trace.yaml`.
+- For product work, link each local ticket to its epic and milestone.
+- Update each ticket with references to relevant artifacts as PRDs,
+  requirements, acceptance criteria, user flows, epics, milestones, ADRs,
+  reviews, prototypes, and tasks are created.
 - Keep tickets small enough to plan, implement, review, and verify as one
   coherent unit.
 
 Local tickets are tracker records. Implementation tasks still live inside the
 matching work trace under `work-trace/{trace-id}/tasks/`.
-

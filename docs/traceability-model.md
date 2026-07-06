@@ -12,6 +12,8 @@ checked in, cross-linked, and verifiable through `just turn-test` and
   ticket or local work item.
 - Requirement: stable `REQ-###` statement of expected behavior or constraint.
 - Acceptance criterion: stable `AC-###` pass/fail condition.
+- Epic: product outcome or domain area that groups related tickets.
+- Milestone: ordered human review gate made of one or more tickets.
 - Task: stable `TASK-###` local implementation chunk.
 - ADR: checked-in architecture decision record.
 - Review: checked-in review record, commonly from `review-turn`.
@@ -39,6 +41,8 @@ work-trace/{trace-id}/
   progress.md
   requirements/
   acceptance/
+  epics/
+  milestones/
   tasks/
   adrs/
   prototypes/
@@ -57,6 +61,7 @@ It records:
 - tracker provider and id
 - checked-in artifacts
 - requirements and acceptance criteria
+- epics and milestones
 - local tasks
 - prototypes
 - reviews
@@ -92,6 +97,7 @@ collide.
 Given a requirement, you should be able to find:
 
 - the ticket or trace that introduced it
+- the epic and milestone that scheduled it
 - acceptance criteria
 - local tasks
 - code paths
@@ -101,6 +107,7 @@ Given a requirement, you should be able to find:
 Given code or a commit, you should be able to find:
 
 - the task that justified it
+- the ticket, epic, and milestone that scheduled it
 - the requirement and acceptance criteria it satisfies
 - the ticket or trace that owns the work
 

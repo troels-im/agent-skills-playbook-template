@@ -2,7 +2,7 @@
 title: Create Product
 summary: Turn a product goal into PRD, tickets, implemented slices, tests, and review.
 created: 2026-07-05
-last_updated: 2026-07-05
+last_updated: 2026-07-06
 ---
 
 # Create Product
@@ -51,24 +51,39 @@ Pre-execute:
    with `playbooks/engineering/code-organization.md`.
 16. [ ] Record ADRs with `playbooks/planning/write-adr.md` when decisions need
    durable explanation.
-17. [ ] Create tickets with `playbooks/planning/split-into-tickets.md`. Do not
+17. [ ] Start ticket planning by creating epics and milestones with
+   `playbooks/planning/plan-epics-milestones.md`. Product work must have
+   reviewable milestone gates before ticket execution starts.
+18. [ ] Create tickets with `playbooks/planning/split-into-tickets.md`. Do not
    start implementation until each accepted slice has an external or local
-   ticket.
+   ticket linked to its epic, milestone, and relevant artifacts.
 
-For every ticket:
+For every milestone:
 
-1. [ ] Plan the ticket with `playbooks/repository/plan-issue.md`.
-2. [ ] Address every task with `playbooks/repository/implementation-playbook.md`
-   and `playbooks/engineering/test-drive-change.md` where useful.
-3. [ ] Run focused checks and `just turn-test`.
-4. [ ] When a requirement is implemented, run
-   `playbooks/repository/red-blue-judge-review.md` against the implementation,
-   linked user story, and acceptance criteria.
-5. [ ] Fix valid P1/P2 implementation review findings before marking the
-   requirement done.
-6. [ ] Mark completed tasks with `[v]`.
-7. [ ] Run `just turn-test`.
-8. [ ] Commit with trace trailers.
+1. [ ] Load the milestone artifact and its tickets from `trace.yaml`.
+2. [ ] For every ticket in the milestone:
+   - Plan the ticket with `playbooks/repository/plan-issue.md`.
+   - Update the ticket with references to relevant artifacts as they are
+     created or changed: PRD, requirements, acceptance criteria, user flows,
+     epics, milestones, ADRs, reviews, prototypes, and tasks.
+   - Address every task with
+     `playbooks/repository/implementation-playbook.md` and
+     `playbooks/engineering/test-drive-change.md` where useful.
+   - Run focused checks and `just turn-test`.
+   - When a requirement is implemented, run
+     `playbooks/repository/red-blue-judge-review.md` against the
+     implementation, linked user story, and acceptance criteria.
+   - Fix valid P1/P2 implementation review findings before marking the
+     requirement done.
+   - Mark completed tasks with `[v]`.
+   - Run `just turn-test`.
+   - Commit with trace trailers.
+3. [ ] Run milestone QA against the included requirements, user stories, user
+   flows, acceptance criteria, tickets, and trace evidence.
+4. [ ] Update every ticket in the milestone with final artifact references,
+   verification evidence, review links, and status.
+5. [ ] Pause for human milestone review. Do not start the next milestone until
+   the user approves, defers remaining issues, or changes the remaining scope.
 
 QA:
 
@@ -88,7 +103,8 @@ QA:
 
 Finish:
 
-1. [ ] Verify the PRD acceptance criteria and user-story coverage.
+1. [ ] Verify the PRD acceptance criteria, user-story coverage, and milestone
+   gates.
 2. [ ] Run `just pr-test`.
 3. [ ] Fix failing PR tests and rerun until passing or blocked.
 4. [ ] Summarize shipped work, open risks, and follow-up tickets.

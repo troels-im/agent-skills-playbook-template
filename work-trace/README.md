@@ -24,6 +24,8 @@ work-trace/{trace-id}/
   acceptance/
   assumptions/
   user-flows/
+  epics/
+  milestones/
   tasks/
   adrs/
   prototypes/
@@ -48,6 +50,11 @@ Rules:
 - Put end-to-end journey maps under
   `user-flows/UF-001-short-title.md` and link user stories to the relevant
   flow steps.
+- For product work, put epics under `epics/EPIC-###-short-title.md` and
+  milestone gates under `milestones/MS-###-short-title.md` before
+  implementation begins.
+- After each milestone, pause for human review before starting the next
+  milestone unless the user explicitly defers or changes scope.
 - Put every durable requirement in `requirements/REQ-###-short-title.md`.
   PRDs may summarize requirements, but must not be the only place they exist.
 - Keep trace files concise enough for review.
@@ -55,6 +62,9 @@ Rules:
 - Create or update the trace before implementation work begins.
 - Put prototypes under `work-trace/{trace-id}/prototypes/{prototype-slug}/`
   when they inform durable work.
+- Update the affected tracker ticket or local `tickets/` file with references
+  to relevant artifacts as PRDs, requirements, acceptance criteria, user flows,
+  epics, milestones, ADRs, reviews, prototypes, and tasks are created.
 - Put flow run checklists under
   `work-trace/{trace-id}/runs/run-YYYYMMDDTHHMMSSZ-short-slug.md`.
 - Use UTC timestamped slugs for local ids that could collide.

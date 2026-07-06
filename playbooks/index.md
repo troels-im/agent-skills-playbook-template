@@ -59,6 +59,8 @@ Start at `planning/index.md`.
 
 - `planning/interview-requirements.md`: Interview the user until the
   requirement tree is clear enough to plan.
+- `planning/plan-epics-milestones.md`: Group product tickets into epics and
+  human-reviewable milestones.
 - `planning/split-into-tickets.md`: Split a PRD, spec, or plan into GitHub,
   GitLab, Linear, or local repository tickets.
 - `planning/spec.md`: Turn vague intent into an executable, testable spec.

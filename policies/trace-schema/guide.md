@@ -19,3 +19,7 @@ Use provider-prefixed trace directories such as `github-123`,
 
 If no external tracker is configured, set `tracker.provider: local` and link
 ticket files from `tickets/`.
+
+Product traces should also include `epics` and `milestones` roll-up sections,
+plus matching `artifacts.epics` and `artifacts.milestones` entries, so tickets
+can be reviewed through human milestone gates.

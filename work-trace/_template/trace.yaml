@@ -14,10 +14,23 @@ tickets:
       - REQ-001
     acceptance:
       - AC-001
+    epic: EPIC-001
+    milestone: MS-001
+    artifacts:
+      - prd.md
+      - requirements/REQ-001-short-title.md
+      - acceptance/AC-001-short-title.md
+      - user-flows/UF-001-short-title.md
+      - epics/EPIC-001-short-title.md
+      - milestones/MS-001-short-title.md
 artifacts:
   prd: prd.md
   tickets:
     - ../../tickets/TICKET-20260705T000000Z-example.md
+  epics:
+    - epics/EPIC-001-short-title.md
+  milestones:
+    - milestones/MS-001-short-title.md
   requirements:
     - requirements/REQ-001-short-title.md
   acceptance:
@@ -55,6 +68,24 @@ user_flows:
       - US-001
     requirements:
       - REQ-001
+epics:
+  - id: EPIC-001
+    file: epics/EPIC-001-short-title.md
+    requirements:
+      - REQ-001
+    tickets:
+      - TICKET-20260705T000000Z-example
+    milestones:
+      - MS-001
+milestones:
+  - id: MS-001
+    file: milestones/MS-001-short-title.md
+    human_gate: Required
+    status: Planned
+    requirements:
+      - REQ-001
+    tickets:
+      - TICKET-20260705T000000Z-example
 tasks:
   - id: TASK-001
     file: tasks/TASK-001-short-title.md

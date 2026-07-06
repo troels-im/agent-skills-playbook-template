@@ -2,7 +2,7 @@
 title: Flow Template
 summary: Template for a user-facing development flow run.
 created: 2026-07-05
-last_updated: 2026-07-05
+last_updated: 2026-07-06
 ---
 
 # Flow Template
@@ -18,6 +18,7 @@ Copy this structure into a run checklist before executing a flow.
 - Tracker provider:
 - User goal:
 - Current phase:
+- Current milestone:
 - Current ticket:
 - Current task:
 - Verification:
@@ -58,6 +59,15 @@ For every ticket:
 5. [ ] Update trace artifacts.
 6. [ ] Run `just turn-test` before committing.
 7. [ ] Commit with trace trailers when complete.
+
+## Per Milestone
+
+For flows that define milestones:
+
+1. [ ] Execute only tickets assigned to the current milestone.
+2. [ ] Update affected tickets with links to artifacts as they are created.
+3. [ ] Run milestone QA against included requirements and acceptance criteria.
+4. [ ] Pause for human review before starting the next milestone.
 
 ## Finish
 
